@@ -51,7 +51,8 @@ int main()
 			if(usuario == 4)
 			{
 				cout << endl << "el resultado es " << (num1 / num2) << endl;
-				cout << endl << "Proceso seleccionado: division";
+				cout << endl;
+				cout << endl << "Proceso seleccionado: div";
 			}
 		}
 		if(usuario == 6)
