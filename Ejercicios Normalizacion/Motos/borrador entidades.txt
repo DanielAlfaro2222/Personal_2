@@ -1,0 +1,31 @@
+Moto
+
+-idmoto
+-matricula
+-grupo al que pertenece
+-marca
+-modelo
+-numero asientos
+-capacidad del motor
+-edad minima alquiler
+
+Oficina
+
+-codigo unico
+-ciudad
+-direccion
+-codigo postal
+-telefono
+
+Registro alquiler
+
+-idregistro
+-nombre conductor
+-apellido conductor
+-identificacion conductor
+-direccion
+-telefono
+-numero tarjeta de credito
+-duracion
+-seguro contratado
+-precio total
