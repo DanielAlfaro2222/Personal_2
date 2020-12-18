@@ -1,19 +1,12 @@
-# __PRUEBA H1__ = titulo mas grande
-## __PRUEBA H2__
-### __PRUEBA H3__
-#### __PRUEBA H4__
-##### __PRUEBA H5__
-###### __PRUEBA H6__ =sub titulo mas pequeño
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-_PRUEBA_ = _poner la letra estilo cursiva_ 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-***PRUEBA*** = ***poner la letra en cursiva y negrita***
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-http://joedicastro.com/consejos = agregar un link 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<http://joedicastro.com/consejos> = manera dos de agregar un link
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[SIN TITULO](http://joedicastro.com/consejos) = agregar un link sin titulo
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-[CON TITULO](http://joedicastro.com/consejos) = agregar un link con titulo
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## _¡Hola! mucho gusto, mi nombre es Kevin Daniel Alfaro Alfonso_ :call_me_hand:
+
+Tengo 20 años, soy tecnico en sistemas cerficado por el SENA, actualmente estudio el tecnologo en ADSI, entre al 
+programa por que me gusta todo lo referente a la tecnologia y pues a futuro quisiera estudiar la ingenieria en sistemas, 
+mi experiencia en la programacion es saber lo basico de PHYTON y C++.Mis pasatiempos son el futbol y los video juegos.
+
+- **Telefono:** _3012380593_
+- **Correo personal:** _dalfaro1103@hotmail.com_
+- **Correo misena:** _kdalfaro45@misena.edu.co_
+
+<p align="center">
+<img border="2" src="https://github.com/senaceet/personal1-DanielAlfaro2222/blob/master/imagen.gif" width="800" height="400"></p>
