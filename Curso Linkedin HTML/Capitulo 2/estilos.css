@@ -1,0 +1,23 @@
+body
+{
+    background-color:coral;
+}
+
+h1, h2, h3, h4, h5, h6, p, img, li
+{
+    margin: 15px;
+
+    /* margin => Con este atributo podemos ajustar el margen el cual podemos aplicarlo a parrafos, titulos, subtitulos,etc... */
+}
+
+p
+{
+    border-bottom: 1px solid; 
+    padding-bottom: 10px;
+    /* Atributos etiqueta <p>
+                    
+    style => Con esta etiqueta podemos agregarle estilos al parrafo por ejemplo en este parrafo estamos agregando una linea debajo del parrafo 
+    
+    */                
+                    
+}

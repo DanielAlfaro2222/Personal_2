@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Trabajando con enlaces que contienen archivos</title>
+        <link rel = "stylesheet" href = "estilos.css" />
+    </head>
+    <body>
+        <header>
+            <figure>
+                <a href = "https://www.google.com/"> <img src = "archivos/logo.png" width="150" /></a>
+                <!--Enlace con imagenes
+                    
+                    Podemos usar una etiqueta de imagen <img> dentro de una etiqueta de <a> para que cuando le den clic 
+                    en la imagen los redireccione a alguna parte de la pagina.
+
+                 -->
+            </figure>
+        </header>
+
+
+        <h1>Capitulo #4 trabajando con enlaces para descargar archivos</h1>
+
+        <a href = "archivos/logo.png" target = "_blank"> Abrir Imagen o descargar Imagen <br> </a>
+        <a href = "archivos/Business Process Diagram1.pdf" target = "_self"> Abrir Pdf o descargar Pdf <br></a>
+        <a href = "archivos/Business Process Diagram1.pdf" target = "_parent"> Abrir Pdf o descargar Pdf <br></a>
+        <a href = "archivos/Business Process Diagram1.pdf" target = "_top"> Abrir Pdf o descargar Pdf <br></a>
+        <a href = "archivos/2020-12-14 18-49-56.mkv" > Abrir Video o descargar video <br></a>
+
+        <!-- Abrir o descargar archivos con la etiqueta <a>
+        
+            Usando esta etiqueta con el atributo href podemos colocar una palabra o boton el cual cuando le demos clic nos abrira o descargara en el navegador.
+        -->
+
+        <!-- Atributo Target de la etiqueta <a>
+            Especifica en donde desplegar la URL enlazada. Es un nombre (name of), o palabra clave (keyword for), un contexto de navegación (browsing context): una pestaña, ventana, o <iframe>. Las siguientes palabras clave (keywords) tienen significado especial:
+
+            Atributo Self => Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.
+
+            Atributo Blank => Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar una ventana nueva en lugar de la pestaña.
+
+            Atributo parent => Carga la URL en el contexto de navegación padre (parent) del actual. Si no existe el padre, este se comporta del mismo modo que _self.
+
+            Atributo _top => Carga la URL en le contexto más alto de navegación (el cual es un ancestro del actual, y no tiene padre (parent)). Si no hay padre (parent), este se comporta del mismo modo que _self.
+         -->
+    </body>
+</html>

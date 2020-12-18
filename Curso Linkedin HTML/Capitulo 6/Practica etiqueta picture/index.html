@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Practica etiqueta picture</title>
+        <link href = "Imagen/favicon.ico" rel = "shortcut icon" type = "Image/X-icon" />
+    </head>
+    <body>
+        <h1>Practicando con la etiqueta picture </h1>
+        <picture>
+            <source media = "(min-width: 1920px)" srcset = "Imagen/Prueba_1920.jpg">
+            <source media = "(min-width: 1500px)" srcset = "Imagen/Prueba_1500.jpg">
+            <source media = "(min-width: 1300px)" srcset = "Imagen/Prueba_1300.png" >
+            <source media = "(min-width: 800px)" srcset = "Imagen/Prueba_800.png" >
+            <img src = "no.jpg" alt = "Imagen de un lago"/>
+        </picture>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+a
+{
+    color:black;
+    text-decoration: none;
+    border: none;
+    /* Esto sirve para cambiar de color la letra de los enlaces y quitarle el subrayado, ademas los enlaces que esten con una imagen
+       le quitaremos el borde para que se vea bien.
+     */
+}
+a:hover
+{
+    color:darkgray;
+
+    /* Esto sirve para que cuando pongamos encima el cursor cambie de color para representar que es un enlace 👌 */
+}

@@ -1,0 +1,25 @@
+body
+{
+    background-color: coral;
+}
+a, abbr, acronym
+{
+    color: black;
+    text-decoration: none;
+
+    /* 
+    En este bloque de codigo lo que hicimos fue ponerle color y quitarle la decoracion de estas tres etiquetas para que se vea mejor visualmente.
+     */
+}
+a:hover
+{
+    color: darkgray;
+}
+abbr:hover
+{
+    color: bisque;
+}
+acronym:hover
+{
+    color: bisque;
+}
