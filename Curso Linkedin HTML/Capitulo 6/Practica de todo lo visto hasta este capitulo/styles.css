@@ -1,4 +1,21 @@
 body
 {
-    background-color:darkgoldenrod;
+    background-color: hotpink;
+}
+a, acronym, abbr
+{
+    text-decoration: none;
+    color:black;
+}
+a:hover
+{
+    color:darkgray;
+}
+acronym:hover
+{
+    color:darkgray;
+}
+abbr:hover
+{
+    color:darkgray;
 }

@@ -1,0 +1,23 @@
+body
+{
+    background-color:lawngreen;
+}
+header, footer
+{
+    background-color: darkgoldenrod;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a, i
+{
+    color:black;
+    text-decoration:none;
+}
+a:hover
+{
+    color: darkgray;
+}
+h1, h2
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}

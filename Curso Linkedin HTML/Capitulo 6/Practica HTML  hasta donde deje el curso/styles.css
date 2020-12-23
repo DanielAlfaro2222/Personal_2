@@ -1,0 +1,29 @@
+body
+{
+    background-color:darkkhaki;
+}
+header, footer
+{
+    background-color: greenyellow;
+}
+a, abbr, acronym
+{
+    color:black;
+    text-decoration: none;
+}
+a:hover
+{
+    color: darkgrey;
+}
+acronym:hover
+{
+    color: darkgrey;
+}
+abbr:hover
+{
+    color: darkgrey;
+}
+a i
+{
+    color: orangered;
+}

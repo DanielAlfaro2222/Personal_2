@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Practica mapa de imagenes</title>
+        <link href = "Imagen/favicon.ico" rel = "icon" type = "Image/X-icon" />
+        <link href = "styles.css" rel = "stylesheet"/>
+        <script src="https://kit.fontawesome.com/92318589eb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id = "Inicio">
+            <figure align = "center">
+                <img src = "Imagen/logo.png" alt = "Logo del Sena" width = "250" height = "250" />
+            </figure>
+            <div align = "center">
+                <a href = "#Inicio"><i class="fas fa-arrow-circle-up fa-2x"></i> Inicio</a>
+                <a href = "#Fin"><i class="fas fa-hand-point-down fa-2x"></i> Fin de la pagina</a>
+            </div>
+        </header>
+
+        <h1>Practica Mapa de imagenes y imagenes responsivas</h1>
+
+        <section>
+            <h2>Ejemplo mapa de imagenes #1</h2>
+            <article>
+                <div align = "center">
+                    <img src = "Imagen/spinner.jpg" alt = "Dos spinners" usemap = "#Ejemplo #1" width = "700" height = "400" />
+                    <map name = "Ejemplo #1">
+                        <area title = "Spinner color azul" alt = "Spinner color azul" shape = "rect" href = "https://es.wikipedia.org/wiki/Fidget_spinner" target = "_blank" coords = "10,10,350,310" />
+                        
+
+                        <area title = "Spinner color naranja" alt = "Spinner color naranja" href = "https://es.wikipedia.org/wiki/Fidget_spinner" target = "_blank" coords = "355,88,700,388" />
+        
+                    </map>
+                </div>
+            </article>
+        </section>
+
+
+        <section>
+            <h2>Ejemplo mapa de imagenes #2</h2>
+            <article>
+                <div align = "center">
+                    <img src = "Imagen/niños.png" alt = "Imagen de dos niños" width = "700" heigth = "400" usemap = "#Ejemplo #2"/>
+
+                    <map name = "Ejemplo #2">
+                        <area title = "Niño" alt = "Niño" href = "https://es.wikipedia.org/wiki/Ni%C3%B1o" target = "_blank" shape = "rect" coords = "225,72,345,325" />
+
+
+                        <area title = "Niña" alt = "Niña" href = "https://es.wikipedia.org/wiki/Nina" target = "_blank" shape = "rect" coords = "355,90,468,325" />
+                    </map>
+                </div>
+            </article>
+        </section>
+
+
+        <section>
+            <h2>Imagen Responsiva</h2>
+            <article>
+                <div align = "center">
+                    <picture>
+                        <source media = "(min-width: 1920px)" srcset = "Imagen/Prueba_1920.jpg" />
+                        <source media = "(min-width: 1500px)" srcset = "Imagen/Prueba_1500.jpg" />
+                        <source media = "(min-width: 1300px)" srcset = "Imagen/Prueba_1300.png" />
+                        <source media = "(min-width: 800px)" srcset = "Imagen/Prueba_800.png" />
+
+                        <img src = "Imagen/descarga.png" alt = "Logo HTML" />
+                    </picture>
+                </div>
+            </article>
+        </section>
+
+
+        <footer id = "Fin">
+            <p align = "right">
+                <a href = "#Inicio"><i class="fas fa-briefcase fa-2x"></i> Pagina Principal</a>
+            </p>
+            <p align = "center"> 
+                © Diseñado por Daniel Alfaro 2020
+            </p>
+        </footer>
+    </body>
+</html>
