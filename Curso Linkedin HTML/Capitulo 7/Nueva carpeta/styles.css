@@ -1,0 +1,54 @@
+body
+{
+    background-color: lightgreen;
+}
+header, footer
+{
+    background-color:orange;
+}
+footer, header, table
+{
+    text-align: center;
+}
+img
+{
+    border: 3px solid black;
+}
+table, tr, th, td
+{
+    border: 2px solid transparent;
+}
+th
+{
+    background-color:goldenrod;
+}
+tr
+{
+    background-color: navajowhite;
+}
+img 
+{
+    margin-top:5px;
+}
+iframe
+{
+    border: none;
+    margin: 0 auto;
+    width: 80%;
+    height: 480px;
+    display:block;
+}
+th:hover
+{
+    color:maroon;
+}
+td:hover
+{
+    color:maroon;
+}
+picture
+{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Practica cap #7</title>
+        <link href = "styles.css" rel = "stylesheet" />
+        <script src="https://kit.fontawesome.com/92318589eb.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id = "Inicio">
+            <figure align = "center">
+                <img src = "Imagen/logo.png" alt = "Logo del Sena" width = "250" heigth = "350"/>
+            </figure>
+            <nav align = "center">
+                <a href = "#"><i class="fas fa-user-circle fa-2x"></i> Inicio</a>
+                <a href = "#"><i class="fas fa-coffee fa-2x"></i> Proyectos</a>
+                <a href = "#"> <i class="fas fa-briefcase fa-2x"></i> Experiencia</a>
+                <a href = "#Fin"><i class="fas fa-address-book fa-2x"></i> Contactame</a>
+            </nav>
+        </header>
+
+
+        <h1>Tablas</h1>
+        <section>
+            <article>
+                <table class = "Tabla">
+                    <thead>
+                        <tr>
+                            <th>Etiqueta thead</th>
+                            <th>Cabecera 2</th>
+                            <th>Cabecera 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class = "Columna">Etiqueta tbody</td>
+                            <td> <img src = "Imagen/descarga.png" alt = "Logo de HTML" width = "60" heigth = "60"></td>
+                            <td>Columna3</td>
+                        </tr>
+                        <tr>
+                            <td>Columna1</td>
+                            <td>Columna2</td>
+                            <td>Columna3</td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Etiqueta table
+                    
+                        En la etiqueta table tendremos adentro una etiqueta <thead> y <tbody> que basicamente thead es la cabeza de la tabla y tbody es el cuerpo.
+
+                        -Etiqueta <thead> => Cabecera de la tabla.
+
+                            -Etiqueta <th> => Este es el titulo o cabecera de la tabla, como es el titulo de la columna va a salir en negrilla.
+
+                        -Etiqueta <tbody> => Cuerpo de la tabla.
+                        -Etiqueta <tr> => Filas de la tabla
+                        -Etiqueta <td> => Columnas de la tabla
+                    -->
+                </table>
+            </article>
+        </section>
+
+
+        <h2>Ejemplo #2 de tablas aplicando estilos CSS</h2>
+        <section>
+            <article>
+                <table align = "center" class = "Ejemplo_tabla">
+                    <thead>
+                        <tr>
+                            <th>Titulo Columna1</th>
+                            <th>Titulo Columna2</th>
+                            <th>Titulo Columna3</th>
+                            <th>Titulo Columna4</th>
+                            <th>Titulo Columna5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Columna1</td>
+                            <td>Columna2</td>
+                            <td>Columna3</td>
+                            <td>Columna4</td>
+                            <td>Columna5</td>
+                        </tr>
+                        <tr>
+                            <td>Columna1</td>
+                            <td>Columna2</td>
+                            <td>Columna3</td>
+                            <td>Columna4</td>
+                            <td>Columna5</td>
+                        </tr>
+                        <tr>
+                            <td>Columna1</td>
+                            <td>Columna2</td>
+                            <td>Columna3</td>
+                            <td>Columna4</td>
+                            <td>Columna5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <h2>Imagenes responsivas</h2>
+        <section>
+            <article align = "center">
+                <picture>
+                    <source media = "(min-width: 1920px)" srcset = "Imagen/Prueba_1920.jpg" />
+                    <source media = "(min-width: 1500px)" srcset = "Imagen/Prueba_1500.jpg" />
+                    <source media = "(min-width: 1300px)" srcset = "Imagen/Prueba_1300.png" />
+                    <source media = "(min-width: 800px)" srcset = "Imagen/Prueba_800.png" />
+
+                    <img src = "Imagen/descarga.png" alt = "Logo de HTML"/>
+                </picture>
+            </article>
+        </section>
+
+        
+        <h2>Mapa de imagenes</h2>
+        <section>
+            <article align  = "center">
+                <img src = "Imagen/comida.jpg" width = "800" heigth = "500" usemap = "#Mapa" alt = "Comida rapida" />
+                <map name = "Mapa">
+                    <area title = "Hamburguesa" alt = "Hamburguesa"  href = "https://es.wikipedia.org/wiki/Hamburguesa" target = "_blank" shape = "rect" coords = "225,120,535,370" />
+
+                    <area title = "Papas fritas" alt = "Papas fritas" href = "https://es.wikipedia.org/wiki/Papas_fritas" target = "_blank" shape = "rect" coords = "540,191,800,410"/>
+                </map>
+            </article>
+        </section>
+
+
+        <footer id = "Fin">
+            <p align = "left">
+                <a href = "#Inicio"><i class="fas fa-angle-double-up fa-2x"></i> Ir al principio de la pagina</a>
+            </p>
+
+            <p align  = "center">
+                <i class="far fa-copyright fa-2x"></i> Diseñado por Daniel Alfaro 2020
+            </p>
+        </footer>
+    </body>
+</html>

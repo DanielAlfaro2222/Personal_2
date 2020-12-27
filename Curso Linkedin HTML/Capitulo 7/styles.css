@@ -1,0 +1,13 @@
+body
+{
+    background-color: limegreen;
+}
+table,img, td
+{
+    border: 4px solid black;
+    border-collapse: collapse;
+}
+table
+{
+    width: 70%;
+}
