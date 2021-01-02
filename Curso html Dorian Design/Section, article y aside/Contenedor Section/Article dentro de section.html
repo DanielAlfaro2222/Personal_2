@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Article dentro de un Section</title>
+	</head>
+	<body>
+		<!-- Secciones de contenido en el main
+        
+        Etiqueta Article => Es un contenedor que representa contenido independiente.
+
+        Etiqueta Section => Es un contenedor generico que agrupa contenido que esta relacionado, cuando creemos bloques cuyo contenido esta relacionado usaremos <section>.
+
+        Etiqueta Aside => Se utiliza para representar contenido relacionado pero que no forma parte del contenido principal.
+
+        Anidamiento => Un section puede contener article's, por ejemplo, si tenemos varios articulos que hablan sobre etiquetas de HTML, deben ir dentro de un section, ya que es un contenido relacionado entre si y los article serian contenido independiente. 
+        
+        -->
+		<header>
+			<h1> Noticias-Header </h1>
+		</header>
+		<main>
+			<section>
+				<h2>Noticias del dia-Section</h2>
+				<article>
+					<h2>Noticia #1 en un Article aparte</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Soluta iusto at nobis cumque. Qui aperiam laboriosam
+						rerum eius ullam natus vitae a optio. Quis ipsum nam hic
+						eligendi atque dignissimos. Lorem ipsum dolor sit amet
+						consectetur adipisicing elit. Nemo obcaecati tempore,
+						veritatis asperiores quas provident aliquid delectus,
+						perferendis ea ratione quidem iusto nesciunt officiis
+						saepe unde magni repudiandae totam minus.
+					</p>
+				</article>
+
+				<article>
+					<h2>Noticia #2 en un Article separado</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Soluta iusto at nobis cumque. Qui aperiam laboriosam
+						rerum eius ullam natus vitae a optio. Quis ipsum nam hic
+						eligendi atque dignissimos. Lorem ipsum dolor sit amet
+						consectetur adipisicing elit. Nemo obcaecati tempore,
+						veritatis asperiores quas provident aliquid delectus,
+						perferendis ea ratione quidem iusto nesciunt officiis
+						saepe unde magni repudiandae totam minus.
+					</p>
+				</article>
+
+				<article>
+					<h2>Noticia #3 en un Article separado</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Soluta iusto at nobis cumque. Qui aperiam laboriosam
+						rerum eius ullam natus vitae a optio. Quis ipsum nam hic
+						eligendi atque dignissimos. Lorem ipsum dolor sit amet
+						consectetur adipisicing elit. Nemo obcaecati tempore,
+						veritatis asperiores quas provident aliquid delectus,
+						perferendis ea ratione quidem iusto nesciunt officiis
+						saepe unde magni repudiandae totam minus.
+					</p>
+				</article>
+			</section>
+		</main>
+
+		<!-- Explicacion en mis propias palabras
+        
+            El section lo usaremos cuando querramos agrupar un bloque de contenido el cual tiene relacion entre si.Por ejemplo: si tenemos una seccion de noticias del dia o sobre algun tema en especifico, deberemos usar el section ya que todo el bloque de contenido es referente al mismo tema en esta caso noticias.Ahora para cada noticia vamos a usar el article para separar las diferentes noticias, ademas, cada article debera tener su titulo y su parrafo para que sea semanticamente correcto.
+
+            Ejemplo usando section y article
+
+            <main>
+                <header>
+                    <h1>Titulo del tema principal en este caso Noticias</h1>
+                </header>
+                <section>
+                    <h2>Tema principal Noticias del dia </h2>
+                    <article>
+                        <h2>Noticia #1 </h2>
+                        <p>Contenido de la noticia</p>
+                </section>
+            </main>
+
+
+            link para validad si el HTML es semanticamente correcto => https://validator.w3.org/#validate_by_input
+        
+		-->
+
+		<footer>31-12-2020</footer>
+	</body>
+</html>

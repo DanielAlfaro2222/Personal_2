@@ -1,0 +1,14 @@
+body {
+	background-color: darkseagreen;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: cursive;
+}
+
+fieldset {
+	display: inline;
+	width: 80%;
+	text-align: center;
+}
