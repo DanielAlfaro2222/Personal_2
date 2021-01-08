@@ -1,0 +1,85 @@
+body {
+	width: 900px;
+	height: 560px;
+	margin: 0 auto;
+}
+.contenedor {
+	width: 860px;
+	height: 690px;
+	background-color: rgb(0, 153, 255);
+	border-radius: 20px;
+	margin-top: 20px;
+}
+.Logo {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	color: white;
+}
+p {
+	display: inline;
+	font-size: 85px;
+	font-family: monospace;
+}
+.Formulario {
+	background-color: white;
+	height: 560px;
+	width: 800px;
+	margin: 0 auto;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+fieldset {
+	height: 530px;
+	width: 760px;
+	margin: 0 auto;
+	border: none;
+}
+.formulario-titulo {
+	font-weight: bold;
+	font-size: 20px;
+}
+.formulario-subtitulo {
+	font-size: 15px;
+	color: dimgray;
+}
+input {
+	height: 30px;
+	border-radius: 5px;
+	align-content: center;
+	border: 2px solid darkgray;
+}
+.despegable {
+	float: right;
+	color: rgb(0, 153, 255);
+	border: none;
+}
+label {
+	display: block;
+}
+.genero {
+	display: inline;
+	vertical-align: middle;
+}
+.sexo-general {
+	vertical-align: middle;
+}
+.advertencia {
+	color: dimgray;
+	font-size: 12px;
+}
+button {
+	height: 40px;
+	float: right;
+	color: white;
+	background-color: rgb(0, 153, 255);
+	display: block;
+	border-radius: 5px;
+	border: none;
+}
+a {
+	color: rgb(0, 153, 255);
+}

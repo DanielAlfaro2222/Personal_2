@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Formulario</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="shortcut icon"
+			type="image/x-icon"
+			href="assets/Favicon/html5_logo.png"
+		/>
+		<script
+			src="https://kit.fontawesome.com/92318589eb.js"
+			crossorigin="anonymous"
+        ></script>
+	</head>
+	<body>
+		<main>
+			<div class="contenedor">
+				<div class="Logo">
+					<i class="fab fa-asymmetrik fa-6x"></i>
+					<p>tuenti</p>
+				</div>
+
+				<div class="Formulario">
+					<fieldset>
+						<form action="#" method="POST">
+							<p class="formulario-titulo">Unete a Tuenti</p>
+							<p class="formulario-subtitulo"
+								>Todos los campos son obligatorios</p
+							>
+							<select class="despegable">
+								<option>Español</option>
+								<option>Ingles</option>
+							</select>
+
+							<br /><br />
+
+							<label for="nombre" class="input">
+								<b>Nombre</b>
+								<input
+									type="text"
+									placeholder="Nombre"
+									id="nombre"
+									name="Nombre"
+								/>
+								<input
+									type="text"
+									placeholder="Apellidos"
+									id="Nombre"
+									name="Apellidos"
+								/>
+							</label>
+
+							<br />
+
+							<label for="email">
+								<b>Email</b>
+								<input type="email" id="email" />
+							</label>
+
+							<br />
+
+							<label for="sexo" class="sexo-general">
+								<b>Sexo:</b>
+								<label class="genero">
+									<input
+										type="radio"
+										name="sexo1"
+										id="sexo1"
+										class="sexo"
+									/>
+									Hombre
+								</label>
+								<label class="genero">
+									<input
+										type="radio"
+										name="sexo1"
+										id="sexo1"
+										class="sexo"
+									/>
+									Mujer
+								</label>
+							</label>
+
+							<br />
+
+							<label for  "fecha">
+								<b>Fecha de nacimiento</b>
+								<input
+									type="date"
+									name="fecha"
+									id="fecha"
+									class="fecha"
+                                />
+                                <br>
+                                <pre class = "advertencia">                      la edad minima permitida es de 14 años</pre>
+                            </label>
+                            
+                            <br>
+
+                            <label for="contraseña">
+                                <b>Contraseña</b>
+                                <input id = "contraseña" name = "contraseña" type = "password">
+                            </label>
+
+                            <br>
+
+                            <label for="numero">
+                                <b>Numero movil</b>
+                                <input type = "number" name = "numero" id = "numero">
+                            </label>
+
+                            <br>
+                            <label for = "condiciones">
+                                <input type="checkbox" id = "condiciones">
+                                Aceptas las<a> Condiciones de uso </a>y la <a>Politica de privacidad </a>de Tuenti y que tuenti te envie comunicaciones, incluso por via electronica.Lee un resumen en el <a>Decalogo de las condiciones de uso</a>
+                            </label>
+
+                            <button type = "submit">¡Disfruta de Tuenti!</button>
+						</form>
+					</fieldset>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
