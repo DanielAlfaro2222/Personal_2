@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+        <title>Atributos de los enlaces</title>
+        <style>
+            img
+            {
+                margin:auto;
+                display: block;
+            }
+        </style>
+	</head>
+	<body>
+		<header>
+			<h1>Atributos de los enlaces</h1>
+		</header>
+
+		<main>
+			<section>
+				<article>
+					<h2>Atributo Target</h2>
+					<p>
+						Este atributo servira para definir en donde se abre el
+						recurso solicitado, puede ser en la misma pagina, en una
+						nueva pagina, etc..
+						<strong>
+							Ademas por norma si el enlace utiliza una ruta
+							absoluta el atributo target debera ser de valor
+							_blank para que se abra en una nueva pestaña del
+							navegador.
+						</strong>
+					</p>
+				</article>
+
+				<article>
+					<h2>Atributo Download</h2>
+					<p>
+						Este es un atributo booleano, el cual servira para
+						descargar el recurso solicitado.
+						<strong>
+							Importante el recurso debe estar en el mismo
+							servidor, no podremos descargar un archivo html
+							externo.
+						</strong>
+					</p>
+				</article>
+
+				<article>
+					<h2>
+						Estructura de desarrollo para imagenes y archivos
+						externos: Carpeta assets
+                    </h2>
+                    <p>
+                        Dentro de nuestra carpeta principal del proyecto crearemos una carpeta llamada assets en el cual iran todos los archivos externos, por ejemplo imagenes videos, etc..<br>
+                        <img src = "assets/images/Captura.PNG" alt = "Imagen de ejemplo ruta de desarrollo" width = "400" height = "150">
+                        <h3>Carpeta propia para el tipo de archivo</h3>
+                        <p>
+                            En la carpeta de medios externos de nuestro proyecto en este caso "assets", crearemos una nueva carpeta para cada tipo de archivo por ejemplo images para imagenes.
+                            <img src = "assets/images/imagenes.PNG" alt = "Imagen de ejemplo carpeta para imagenes" width = "400" height = "150">
+                        </p>
+                    </p>
+				</article>
+			</section>
+		</main>
+		<footer>Diseñado por Daniel Alfaro 2020</footer>
+	</body>
+</html>

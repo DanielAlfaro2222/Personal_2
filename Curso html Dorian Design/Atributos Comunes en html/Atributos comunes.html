@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+        <title>Atributos comunes</title>
+        <style>
+            .clases
+            {
+                color: darkblue;
+            }
+            .id
+            {
+                color:darkolivegreen;
+            }
+            .titulo
+            {
+                color:darkorange;
+            }
+            .datos
+            {
+                color:maroon;
+            }
+        </style>
+	</head>
+	<body>
+		<!-- Atributos globales que estan disponibles en la mayoria de etiquetas en HTML
+        
+        Class => Este atributo es usando para identificar un selector o etiqueta HTML en CSS, a diferencia del atributo id, el atributo class lo podremos usar para identificar varios selectores. 
+
+        Id => Este atributo es usado para identificar un selector o etiqueta de html de manera unica para poder usarla en javascript, usar este atributo para luego usarlo en CSS es una mala practica.
+
+        title => Es un atributo global que contiene informacion relacionada al elemento al cual pertenece.
+
+        data => Es un atributo que nos permite guardar algun valor en una etiqueta HTML.
+        
+        -->
+        <h1>Atributos globales</h1>
+        <p>Cada color es un aributo</p>
+
+		<p>
+            <h2 class = "clases">Clases</h2>
+            <p class = "clases">
+                Este atributo global nos va a ayudar a identificar selectores o etiquetas de HTML para aplicarle estilo en CSS.
+            </p>
+        </p>
+
+		<p>
+            <h2 class = "id">Identificadores</h2>
+            <p class = "id">
+                Este atributo nos va ayudar a colocar un identificador unico en una etiqueta HTML para tomar la referencia de identificacion para usarlo en javascript.<br>
+                
+                <h3 class = "id">Ejemplo usando ID y javascript dar click en el boton</h3>
+                <button id = "Boton" class = "id">Ejemplo usando ID</button>
+            </p>
+        </p>
+
+        <p>
+            <h2 class = "titulo">Titulos con tooltip</h2>
+            <p class = "titulo">
+                Este atributo sirve para agregar informacion acerca del contenido de la etiqueta.
+                <h3 class = "titulo">Ejemplo</h3>
+                <p title = "Este es un ejemplo usando el atributo title" class = "titulo">
+                    Uso del atributo title al poner el cursor sobre este parrafo podremos conocer la informacion adicional que colocamos en la etiqueta p
+                </p>
+            </p>
+        </p>
+        
+        <p class = "datos">
+            <h2 class = "datos">Atributo Data</h2>
+            <p class = "datos" id = "datoz" data-ejemplo = "Este es un ejemplo" >
+                Este atributo lo usaremos para agregar datos a una etiqueta que no necesariamente deban ser visibles, para obtener estos datos lo haremos a traves de javascript.
+                <h3 class = "datos">Ejemplo</h3>
+
+                <button id = "boton">Atributo Data</button>
+            </p>
+        </p>
+        
+
+        <script>
+            var b = document.getElementById("Boton");
+            var c = b.addEventListener("click", alerta);
+            function alerta()
+            {
+                alert("Ejemplo usando el atributo ID y javascript para agregarle funcionalidad");
+            }
+
+
+            var a = document.getElementById("datoz");
+            var dat = document.getElementById("boton");
+            
+            var d = dat.addEventListener("click", alerta2);
+            
+            function alerta2()
+            {
+                alert(a.dataset.ejemplo);
+            }
+        </script>
+	</body>
+</html>

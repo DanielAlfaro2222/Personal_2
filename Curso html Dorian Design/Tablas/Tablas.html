@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Tablas en HTML</title>
+        <style>
+            table{
+                border-collapse: collapse;
+            }
+            tr{
+                border: 2px solid black;
+            }
+            th{
+                border: 2px solid black;
+            }
+            td{
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tablas</h1>
+        <p>
+            En HTML podremos manejar o crear tablas, las cuales iran dentro de un contenedor llamado table. A continuacion podremos ver la estructura de una tabla en html: 
+
+            <div>
+                <ul>
+                    <li>Etiqueta table que va a funcionar como un contendor</li>
+                    <ul>
+                        <li>Etiqueta thead para el encabezado de la tabla</li>
+                            <ul>
+                                <li>Etiqueta tr para agregar una nueva fila en la tabla</li>
+                                    <ul>
+                                        <li>Etiqueta th para definir el titulo de cada columna(posdata el numero de columnas es proporcional al numero de th que esten presentes en la tabla</li>
+                                    </ul>
+                            </ul>
+                        <li>Etiqueta tbody para el contenido o el cuerpo de la tabla</li>
+                            <ul>
+                                <li>Etiqueta tr para una nueva fila</li>
+                                    <ul>
+                                        <li>Etiqueta td para ir creando las columnas</li>
+                                    </ul>
+                            </ul>
+                    </ul>
+                </ul>
+            </div>
+
+            <h2>Ejemplo de una tabla</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                        <th>Columna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Contenido columna 1</td>
+                        <td>Contenido columna 2</td>
+                        <td>Contenido columna 3</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div>
+                <h2>Codigo de ejemplo</h2>
+                <img src = "assets/Captura.PNG" alt = "codigo de ejemplo de una tabla" width="600" height="400">
+            </div>
+        </p>
+    </body>
+</html>
