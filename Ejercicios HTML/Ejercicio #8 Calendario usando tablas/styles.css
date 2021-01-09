@@ -1,0 +1,60 @@
+.contenedor-principal {
+	width: 260px;
+	height: 350px;
+	margin: 0 auto;
+	border: 2px solid black;
+}
+body {
+	text-align: center;
+}
+.contenedor-hijo {
+	width: 260px;
+	height: 50px;
+	top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icono-left {
+	float: left;
+	width: 30px;
+	height: 30px;
+	display: inline;
+}
+.icono-center {
+	display: inline-block;
+	width: 170px;
+	height: 30px;
+	font-size: 26px;
+	font-weight: bolder;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+.icono-right {
+	float: right;
+	width: 30px;
+	height: 30px;
+	display: inline;
+}
+.contenedor-nieto {
+	width: 230px;
+	height: 30px;
+	margin: 0 auto;
+}
+table {
+	margin: 0 auto;
+	width: 240px;
+	height: 290px;
+}
+td:hover {
+	color: white;
+	background-color: rgb(56, 159, 219);
+	border-radius: 10px;
+}
+td {
+	font-size: 19px;
+}
+th {
+	font-size: 30px;
+}
