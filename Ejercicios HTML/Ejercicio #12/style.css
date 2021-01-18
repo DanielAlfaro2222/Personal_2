@@ -1,0 +1,62 @@
+.Contenedor-general {
+	border: 2px solid black;
+	margin: 0 auto;
+	width: 400px;
+	height: 450px;
+	margin-top: 85px;
+}
+.Boton {
+	display: block;
+	margin: 0 auto;
+	width: 215px;
+	height: 36px;
+	border: none;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	margin-bottom: 10px;
+}
+.Contraseña {
+	margin-bottom: 20px;
+}
+legend {
+	margin: 0 auto;
+	margin-bottom: 23px;
+	font-size: 45px;
+}
+form {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 360px;
+}
+fieldset {
+	border: none;
+}
+input {
+	display: block;
+	width: 210px;
+	height: 36px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	border: none;
+	border-bottom: 2px solid black;
+	font-size: 12px;
+}
+
+p {
+	text-align: center;
+	/* font-size: 16px; */
+}
+.Gris {
+	color: darkgrey;
+	text-decoration: none;
+	font-size: 13px;
+}
+.Negro {
+	font-weight: 600;
+	border: none;
+	font-size: 13px;
+}
+.Iniciar-sesion {
+	margin: 0 auto;
+	text-align: center;
+}

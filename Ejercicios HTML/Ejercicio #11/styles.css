@@ -1,0 +1,156 @@
+body {
+	background-color: #ffdd55ff;
+}
+.Año {
+	background-color: #8fd8d2ff;
+	width: 95%;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.Contenedor-principal {
+	/* background-color: aqua; */
+	width: 94%;
+	padding-top: 35px;
+	height: 600px;
+	margin: 0 auto;
+}
+.Contenedor-hijo-izquierdo {
+	/* background-color: blue; */
+	width: 40%;
+	height: 500px;
+	float: left;
+	margin: 0 auto;
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Contenedor-hijo-derecho {
+	/* background-color: rgb(247, 0, 255); */
+	width: 60%;
+	height: 575px;
+	float: right;
+	margin: 0 auto;
+}
+.Imagen {
+	/* background-color: white; */
+	width: 487px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+img {
+	width: 490px;
+	height: 500px;
+}
+.Titulo-calendario {
+	/* background-color: brown; */
+	width: 95%;
+	height: 65px;
+	margin: 0 auto;
+	font-family: 'Bangers', cursive;
+	color: rgb(17, 14, 14);
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+p {
+	margin-top: 0%;
+	font-size: 65px;
+	margin: 0 auto;
+	display: inline-block;
+}
+.Titulo-separacion {
+	/* background-color: chartreuse; */
+	width: 95%;
+	height: 20px;
+	margin: 0 auto;
+}
+
+table {
+	background-color: #8fd8d2ff;
+	width: 95%;
+	height: 410px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Sriracha', cursive;
+	border-collapse: collapse;
+}
+tr {
+	/* border: 1px solid black; */
+	height: 68px;
+}
+th {
+	/* border: 1px solid black; */
+	font-size: 37px;
+	width: 114px;
+	/* height: 60px; */
+}
+td {
+	/* border: 1px solid black; */
+	font-size: 29px;
+}
+td:hover {
+	background-color: white;
+	-moz-border-radius: 55%;
+	-webkit-border-radius: 55%;
+	border-radius: 50%;
+}
+.Festivo:hover {
+	color: red;
+}
+.Flecha-izquierda {
+	/* background-color: darkseagreen; */
+	width: 130px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Mes-año {
+	/* background-color: firebrick; */
+	width: 59%;
+	height: 49px;
+	display: inline-block;
+	text-align: center;
+	font-family: 'Sriracha', cursive;
+}
+.Festivo {
+	background-color: rgb(190, 34, 34);
+	-moz-border-radius: 55%;
+	-webkit-border-radius: 55%;
+	border-radius: 50%;
+}
+.Mes-año p {
+	font-size: 35px;
+	font-weight: bold;
+}
+.Flecha-derecha {
+	/* background-color: rgb(32, 223, 32); */
+	width: 130px;
+	height: 50px;
+	float: right;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Calendario {
+	border-radius: 20px;
+	background-color: #8fd8d2ff;
+	width: 95%;
+	height: 480px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+.Dias-mes-anterior {
+	color: rgb(104, 103, 103);
+}
+.Dias-mes-anterior:hover {
+	color: black;
+}
