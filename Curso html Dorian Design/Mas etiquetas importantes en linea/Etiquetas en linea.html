@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Etiquetas en linea</title>
+		<style>
+			span {
+				color: chocolate;
+			}
+            .Bloque{
+                border: 1px solid black;
+            }
+            .Linea{
+                border: 1px solid black;
+            }
+		</style>
+	</head>
+	<body>
+		<section>
+			<h1>Otras etiquetas en linea</h1>
+			<article>
+				<h2>Etiqueta span</h2>
+				<p>
+					Esta etiqueta funciona para agrupar texto para darle estilo
+					en CSS, es como un contenedor en linea para darle estilo al
+					texto.
+				</p>
+				<h3>Ejemplo</h3>
+				<p>
+					Lorem ipsum dolor sit,
+					<span>
+						amet consectetur adipisicing elit. Placeat animi dolore
+						exercitationem, ullam, nobis recusandae odio ipsum
+						officiis eum distinctio, possimus ut minus laboriosam
+						quae
+					</span>
+					dignissimos libero? Veritatis, ab blanditiis? Lorem ipsum
+					dolor sit amet consectetur adipisicing elit. Voluptates,
+					laudantium praesentium fuga placeat laboriosam itaque
+					veritatis accusamus repudiandae quibusdam, incidunt et sit
+					magni rerum perferendis. Eveniet, quibusdam commodi?
+					Reprehenderit, assumenda!
+				</p>
+			</article>
+
+			<article>
+				<h2>Etiqueta q</h2>
+				<p>
+					Esta etiqueta hace lo mismo que la etiqueta blockquote solo
+					que a diferencia de la etiqueta blockquote esta etiqueta la
+					usaremos para representar citas en linea y no en bloque.
+				</p>
+                <h3>Ejemplo</h3>
+                <blockquote class = "Bloque">
+                    <strong>Blockquote</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quisquam molestias praesentium in id possimus sunt, voluptas maiores mollitia modi a minima nam commodi corporis beatae! Autem praesentium eos repudiandae!.
+                <blockquote>
+                <q class = "Linea">
+                    <strong>Q</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </q>
+			</article>
+
+			<article>
+				<h2>Etiqueta code</h2>
+				<p>
+                    Esta etiqueta la usaremos cuando querramos representar visualmente codigo, normalmente la etiqueta code se usa adentro de una etiqueta pre.
+                </p>
+                <h3>Ejemplo</h3>
+                <pre>
+                    <code>
+                        span {
+                            color: chocolate;
+                        }
+                        .Bloque{
+                            border: 1px solid black;
+                        }
+                        .Linea{
+                            border: 1px solid black;
+                        }
+                    </code>
+                </pre>
+			</article>
+		</section>
+	</body>
+</html>

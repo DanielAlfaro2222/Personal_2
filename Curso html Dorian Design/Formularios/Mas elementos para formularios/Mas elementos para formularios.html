@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mas elementos para formularios</title>
+	</head>
+	<body>
+        <h1>Mas elementos para formularios</h1>
+        <h2>Fieldset</h2>
+        <p>
+            Esta etiqueta sirve para agrupar todos los elementos que hacen parte del formulario.
+            <fieldset>
+                <legend>Ejemplo de fieldset</legend>
+                <form action=""></form>
+            </fieldset>
+        </p>
+
+        <h2>Legend</h2>
+        <p>
+            Esta etiqueta sirve para darle un titulo al contenido del formulario.
+
+            <fieldset>
+                <legend>Ejemplo del uso de legend</legend>
+                <form></form>
+            </fieldset>
+        </p>
+
+        <h2>File</h2>
+        <p>
+            Esta etiqueta sirve para agregar un boton en el cual se podran subir archivos.
+            <br><br>
+            <input type="file">
+        </p>
+
+        <h2>Meter</h2>
+        <p>
+            Esta eiqueta sirve para representar un rango conocido, ademas maneja ciertos atributos min y max(representan los limites inferior y superior), low y high(representa limites desde las margenes de bajo y alto), optimum(representa el valor optimo) y value que representa el valor del rango.Esta etiqueta la podremos usar en ejemplos como el consumo total de un disco duro, el uso de una memoria ram, etc...
+            
+            <fieldset>
+                <legend>Ejemplo del uso de meter</legend>
+                <label>
+                    Valor del rango: 29
+                    <meter min = "0" max = "100" optimum="50" low = "30" high="80" value = "29">
+                    </meter>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ejemplo del uso de meter en la vida real</legend>
+                <label>
+                    Uso de la memoria RAM
+                    <meter min = "0" max = "100" optimum="50" low = "30" high="80" value = "60">
+                    </meter>
+                </label>
+            </fieldset>
+        </p>
+
+        <h2>Progress</h2>
+        <p>
+            Esta etiqueta sirve para representar el progreso de una tarea.Esta etiqueta maneja dos atributos el primero es max(representa el valor maximo) y value (representa el progreso de la tarea).
+
+            <fieldset>
+                <legend>Ejemplo de progress</legend>
+                <label>
+                    Tarea 1
+                    <meter max = "100" value = "60"></meter>
+                    60%
+                </label>
+            </fieldset>
+        </p>
+
+        <h2>Textarea</h2>
+        <p>
+            Esta etiqueta sirve para crear un cuadro de texto, nosotros podemos asignarle el ancho(numero de columnas-columns) y el largo(numero de filas-row).Ademas si lo deseamos el usuario podra cambiarle el tamaño, pero esto lo podremos bloquear usando CSS.
+
+            <textarea>
+        </p>
+    </body>
+</html>

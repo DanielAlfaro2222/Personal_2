@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>TIpo de input radio</title>
+	</head>
+	<body>
+        <h1>Input de tipo radio</h1>
+        <p>
+            Este tipo de input se utiliza para cuando tenemos varias opciones y queremos que el usuario selecione una.Por ejemplo en un formulario donde tenemos un campo que pregunta por el genero de una persona en este caso es importante usar este tipo de input. 
+            <h2>Ejemplo</h2>
+            <form action="">
+                <label >
+                    Sexo:
+                    <input type="radio" name = "genero">
+                    Hombre
+                    <input type="radio" name = "genero">
+                    Mujer
+                </label>
+            </form>
+            <h2>Atributos</h2>
+            <p>
+                <h2>Atributo name</h2>
+                <p>
+                    Este atributo lo usaremos para identificar o decirle al navegador que el usuario solo puede escoger una opcion, para lograr esto todas las opciones deben de tener el mismo valor del name.Tambien sirve para identificar el nombre del campo para que cuando se envie los datos aparezca el nombre y el valor del campo que se envio.
+                </p>
+                <h2>Atributo value</h2>
+                <p>
+                    Este atributo lo usaremos para identificar o decirle al navegador que opcion escogio el usuario por ejemplo en un formulario donde se pregunta el genero, nosotros podremos colocar el nombre de la opcion y el valor para que cuando se envie el formulario aparezca el nombre y el valor del campo.
+
+                    <h3>Ejemplo</h3>
+                    <pre>
+                        <code>
+                            &lt;form&gt;
+                                &lt;label&gt;
+                                    Sexo:
+                                    &lt;input type="radio" name = "genero" value = "Hombre"&gt;
+                                    Hombre
+                                    &lt;input type="radio" name = "genero" value = "Mujer"&gt;
+                                    Mujer
+                                &lt;/label&gt;
+                            &lt;/form&gt;
+                        </code>
+                    </pre>
+                    <form action="">
+                        <label >
+                            Sexo:
+                            <input type="radio" name = "genero" value = "Hombre" >
+                            Hombre
+                            <input type="radio" name = "genero" value = "Mujer">
+                            Mujer
+                        </label>
+                    </form>
+                </p>
+                <h2>Atributo checked</h2>
+                <p>
+                    Este atributo sirve para definir una opcion por defecto, este atributo es booleano.Como consejo es bueno no poner el valor de este atributo true o false lo recomendado es dejarlo sin valor ya que si colocamos este atributo en una opcion ya estariamos indicando que por ser la unica opcion el valor va a ser true.
+
+                    <h3>Ejemplo</h3>
+                    <form action="">
+                        <label >
+                            Sexo:
+                            <input type="radio" name = "genero" value = "Hombre" checked>
+                            Hombre
+                            <input type="radio" name = "genero" value = "Mujer">
+                            Mujer
+                        </label>
+                    </form>
+                </p>
+            </p>
+        </p>
+    </body>
+</html>

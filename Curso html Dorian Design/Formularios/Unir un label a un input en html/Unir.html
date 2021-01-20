@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Unir un label a un input</title>
+    </head>
+    <body>
+        <h1>Como unir un label a un input en un formulario</h1>
+        <p>
+            Lo que haremos para unir un label a un input es:
+
+            <ol>
+                <li>
+                    En el input le pondremos un atributo id para identificarlo, este id debe ser unico.
+                </li>
+                <li>
+                    En el label utilizaremos un atributo for en el cual pondremos el nombre del id del input.
+                </li>
+                <li>
+                    Listo ya atamos un label a un input en un formulario.
+                </li>
+            </ol>
+
+            <h2>Codigo de Ejemplo</h2>
+            <h3>Formas de hacerlo</h3>
+            <pre>
+                <h4>Forma #1</h4>
+                &lt;form action = "#" method = "POST"&gt;
+                    &lt;label for = "Nombre"&gt;Nombre&lt;/label&gt;
+                    &lt;input type = "text" id = "Nombre"&gt;
+                    &lt;button&gt;Enviar&lt;/button&gt;
+                &lt;/form&gt;
+            </pre>
+
+            <pre>
+                <h4>Forma #2</h4>
+                &lt;form action = "#" method = "POST"&gt;
+                    &lt;label&gt;
+                        &lt;input type = "text"&gt;
+                        &lt;button&gt;Enviar&lt;/button&gt;
+                    &lt;/label&gt;
+                &lt;/form&gt;
+            </pre>
+        </p>
+        <form action="#">
+            <label>
+                Nombre
+                <input type="text">
+                <button>Enviar</button>
+            </label>
+        </form>
+    </body>
+</html>

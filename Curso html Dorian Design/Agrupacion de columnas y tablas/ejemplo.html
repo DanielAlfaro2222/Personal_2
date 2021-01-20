@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Ejemplo de agrupacion de tablas</title>
+		<style>
+			table {
+				border-collapse: collapse;
+				margin: 0 auto;
+				text-align: center;
+				width: 70%;
+			}
+			caption {
+				font-size: 25px;
+				font-weight: bold;
+			}
+			tr {
+				border: 2px solid black;
+				height: 40px;
+			}
+			td {
+				border: 2px solid black;
+			}
+			th {
+				border: 2px solid black;
+			}
+			.Colgroup {
+				background-color: chartreuse;
+			}
+			.Colgroup-2 {
+				background-color: coral;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption>
+				Ejemplo de tablas usando colspan, rowspan y colgroup
+			</caption>
+			<colgroup>
+				<col span="2" class="Colgroup" />
+				<col span="3" class="Colgroup-2" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>Columna</th>
+					<th>Columna</th>
+					<th>Columna</th>
+					<th>Columna</th>
+					<th>Columna</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td rowspan="4"> Rowspan </td>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+				</tr>
+				<tr>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+				</tr>
+				<tr>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+				</tr>
+				<tr>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+				</tr>
+				<tr>
+					<td colspan="4">Colspan</td>
+					<td>Columna</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

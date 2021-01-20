@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>TIpo de input checkbox</title>
+	</head>
+	<body>
+		<h1>Input tipo checkbox</h1>
+		<p>
+			Este tipo de input es igual a los input de tipo radio pero con la diferencia que este tipo de input se usa para que el usuario pueda escoger mas de una opcion.
+		</p>
+		<h2>Ejemplo</h2>
+		<p>
+			<h3>¿Que equipos conoces?</h3>
+			<form action="" method="GET">
+				<label>
+					Deportivo cali
+					<input type="checkbox" name = "Equipo" value = "cali">
+					Santa fe
+					<input type="checkbox" name = "Equipo" value = "Santa fe">
+					Real madrid
+					<input type="checkbox" name = "Equipo" value = "Real madrid">
+				</label>
+				<input type="submit" value = "Enviar">
+			</form>
+		</p>
+		<h2>Atributos</h2>
+		<p>
+			<h3>Atributo name</h3>
+			<p>
+				Este tipo de atributo es para asignarle un nombre al campo, como todas las opciones son de la misma pregunta deben llevar el mismo name, pero con diferente value.
+			</p>
+			<h3>Atributo value</h3>
+			<p>
+				Este atributo es para asignarle un valor a cada opcion de la pregunta, cada valor del value deben ser distintos ya que dependiendo que opcion marque el usuario se enviara el nombre y valor correspondiente a la opcion. 
+			</p>
+			<h3>Atributo checked</h3>
+			<p>
+				Este atributo es para marcar una opcion por defecto, a diferencia de el tipo de input radio podremos marcar varias opciones.
+
+				<h3>¿Que equipos conoces?</h3>
+				<form action="" method="GET">
+					<label>
+						<input type="checkbox" name = "Equipo" value = "cali" checked>
+						Deportivo cali
+						<input type="checkbox" name = "Equipo" value = "Santa fe" checked>
+						Santa fe
+						<input type="checkbox" name = "Equipo" value = "Real madrid">
+						Real madrid		
+					</label>
+					<input type="submit" value = "Enviar">
+				</form>
+
+			</p>
+		</p>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Tipo select</title>
+		<style>
+			.fieldset1 {
+				font-weight: 500;
+				border: 2px solid black;
+			}
+			.fieldset2 {
+				font-weight: 500;
+				border: 2px solid red;
+				color: rgb(209, 128, 23);
+			}
+		</style>
+	</head>
+	<body>
+		<h1>TIpo select</h1>
+		<p>
+			Este tipo sirve para crear una lista despegable de opciones las
+			cuales el usuario podra escoger una o varias opciones dependiendo lo
+            que deseemos realizar.
+            <div>
+                <h2>Estructura basica</h2>
+                <ul>
+                    <li>&lt;select name = ""&gt;</li>
+                        <ul type = "disc">
+                            <li>&lt;option value = ""&gt;Nombre&lt;option&gt;</li>
+                        </ul>
+                    <li>&lt;/select&gt;</li>
+                </ul>
+            </div>
+		</p>
+		<fieldset class="fieldset1">
+			<legend>Ejemplo de select para elegir una sola opcion</legend>
+			<form action="#">
+				<select name="Equipos">
+					<option value="Deportivo cali">Deportivo Cali</option>
+					<option value="Junior">Junior</option>
+					<option value="Medellin">DIM</option>
+				</select>
+			</form>
+		</fieldset>
+
+		<br />
+		<fieldset class="fieldset2">
+			<legend>Ejemplo de select para elegir varias opciones</legend>
+			<form action="#">
+				<select name="Equipos" multiple>
+					<option value="Deportivo cali">Deportivo Cali</option>
+					<option value="Junior">Junior</option>
+					<option value="Medellin">DIM</option>
+				</select>
+			</form>
+        </fieldset>
+        
+        <h2>Agrupar opciones</h2>
+        <p>
+            Para poder facilitar al usuario el poder escoger opciones, usando la etiqueta optgroup para agrupar opciones referentes a un tema en particular, para poder nombrar ese grupo usaremos el atributo label.
+
+            <fieldset>
+                <legend>Ejemplo de agrupaciones</legend>
+                <select name="Equipos">
+                    <optgroup label = "Equipos de Bogota">
+                        <option value="Bogota fc">Bogota fc</option>
+                        <option value="Santa fe">Santa fe</option>
+                        <option value="Millonarios">Millonarios</option>
+                        <option value="Fortaleza">Fortaleza</option>
+                    </optgroup>
+                    <optgroup label = "Equipos de Medellin">
+                        <option value="Nacional">Nacional</option>
+                        <option value="Dim">Dim</option>
+                        <option value="Leones">Leones</option>
+                        <option value="Aguilas doradas">Aguilas doradas</option>
+                    </optgroup>
+                    <optgroup label = "Equipos de Cali">
+                        <option value="Deportivo Cali">Deportivo Cali</option> 
+                        <option value="America">America</option> 
+                        <option value="Depor">Depor</option> 
+                        <option value="Boca junior de cali">Boca junior de cali</option> 
+                        <option value="Atletico fc">Atletico fc</option> 
+                        <option value="Cortulua">Cortulua</option> 
+                    </optgroup>
+                </select>
+            </fieldset>
+        </p>
+
+
+        <h2>Atributos</h2>
+        <p>
+            <h3>Atributo name</h3>
+            <p>
+                Este atributo sirve para nombrar el campo de seleccion, siempre este atributo va a ir en el select nunca en las opciones.
+            </p>
+            <h3>Atributo value</h3>
+            <p>
+                Este atributo sirve para colocar un valor en cada opcion que este dentro del select, este atributo unicamente va a estar presente en la etiqueta option.
+            </p>
+        </p>
+	</body>
+</html>

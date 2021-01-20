@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Agrupacion de tablas y columnas</title>
+		<style>
+			table {
+				margin: 0 auto;
+				border-collapse: collapse;
+				text-align: center;
+				/* border-radius: 10px; */
+			}
+			tr {
+				height: 35px;
+				border: 2px solid black;
+				/* background-color: coral; */
+			}
+			td {
+				border: 2px solid black;
+			}
+			th {
+				border: 2px solid black;
+			}
+			caption {
+				font-size: 19px;
+				font-weight: bolder;
+			}
+			col {
+				background-color: cornflowerblue;
+				height: 110px;
+			}
+			.tabla {
+				background-color: greenyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Atributos rowspan y colspan de una tabla</h1>
+		<h2>Atributo rowspan</h2>
+		<p>
+			Este atributo nos servira para agrupar celdas en un numero que
+			querramos en filas, el numero por defecto es 1.
+		</p>
+		<h2>Atributo colspan</h2>
+		<p>
+			Este atributo nos servira para agrupar celdas en un numero que
+			querramos de columnas, el numero por defecto es 1.
+		</p>
+		<table class="tabla">
+			<caption>Ejemplo usando las dos etiquetas</caption>
+			<thead>
+				<tr>
+					<th>Columna</th>
+					<th>Columna</th>
+					<th>Columna</th>
+					<th>Columna</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td rowspan="4"><b>Rowspan</b></td>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+				</tr>
+				<tr>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+				</tr>
+				<tr>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+				</tr>
+				<tr>
+					<td>Columna</td>
+					<td>Columna</td>
+					<td>Columna</td>
+				</tr>
+				<tr>
+					<td colspan="3"><b>Colspan</b></td>
+					<td>Columna</td>
+				</tr>
+			</tbody>
+		</table>
+		<section>
+			<h2>Etiqueta colgroup y col</h2>
+
+			<h3>Colgroup y col</h3>
+			<p>
+				Esta etiqueta la usaremos para agrupar columnas, a su vez dentro
+				de la columna colgroup tendremos etiquetas col que basicamente
+				serviran para agrupar columnas de izquierda a derecha, dentro de
+				la etiqueta col tendremos un atributo span que lo usaremos para
+				identificar cuantas columnas querremos agrupar.
+			</p>
+			<table>
+				<caption>Ejemplo de una tabla usando colgroup y col</caption>
+				<colgroup>
+					<col span="2" />
+				</colgroup>
+				<thead>
+					<tr>
+						<th>Columna</th>
+						<th>Columna</th>
+						<th>Columna</th>
+						<th>Columna</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td rowspan="4"><b>Rowspan</b></td>
+						<td>Columna</td>
+						<td>Columna</td>
+						<td>Columna</td>
+					</tr>
+					<tr>
+						<td>Columna</td>
+						<td>Columna</td>
+						<td>Columna</td>
+					</tr>
+					<tr>
+						<td>Columna</td>
+						<td>Columna</td>
+						<td>Columna</td>
+					</tr>
+					<tr>
+						<td>Columna</td>
+						<td>Columna</td>
+						<td>Columna</td>
+					</tr>
+					<tr>
+						<td colspan="3"><b>Colspan</b></td>
+						<td>Columna</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td
+							>Las columnas coloreadas de azul son las que
+							agrupamos</td
+						>
+						<td>Columna</td>
+						<td>Columna</td>
+						<td>Columna</td>
+					</tr>
+				</tfoot>
+			</table>
+		</section>
+	</body>
+</html>

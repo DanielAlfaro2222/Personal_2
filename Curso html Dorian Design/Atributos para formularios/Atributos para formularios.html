@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+        <title>Atributos para formularios</title>
+        <style>
+            .numero{
+                width: 100px;
+            }
+        </style>
+	</head>
+	<body>
+		<h1>Atributos para formularios</h1>
+
+        <h2>Atributo placeholder</h2>
+        <p>
+            Esta atributo sirve para colocar un texto descriptivo adentro de un campo para que el usuario sepa que debe poner en ese campo del formulario, apenas el usuario escriba en el campo este texto descriptivo se eliminara.
+
+            <fieldset>
+                <legend>Ejemplo atributo placeholder</legend>
+                <form action="">
+                    <input type = "text" placeholder="Nombre">
+                </form>
+            </fieldset>
+        </p>
+
+        <h2>Atributo requeried</h2>
+        <p>
+            Este atributo sirve para indicarle al navegador que un campo es obligatorio llenarlo o que ese campo sencillamente no se puede dejar vacio.
+
+            <fieldset>
+                <legend>Ejemplo atributo requeried</legend>
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                    <button>Enviar</button>
+                </form>
+            </fieldset>
+        </p>
+
+        <h2>Atributo readonly</h2>
+        <p>
+            Este atributo sirve para colocar un campo de un formulario para solo lectura, no se podra editar.
+
+            <fieldset>
+                <legend>Ejemplo atributo readonly</legend>
+                <form action="">
+                    <input type="text" value = "Daniel" readonly>
+                </form>
+            </fieldset>
+        </p>
+
+        <h2>Atributo disabled</h2>
+        <p>
+            Este atributo funciona igual que el atributo readonly, con la unica diferencia que este campo se desactivara, en pocas palabras el formulario va a ignorar este campo y no lo va a enviar.
+
+            <fieldset>
+                <legend>Ejemplo atributo disabled</legend>
+                <form action="#" method = "GET">
+                    <label>
+                        Nombre
+                        <input type="text" name = "Nombre">
+                    </label>
+
+                    <label>
+                        Campo deshabilitado 
+                        <input type="text" value = "Alfaro" name = "Apellido" disabled>
+                    </label>
+                    <button>Enviar</button>
+                </form>
+            </fieldset>
+        </p>
+
+        <h2>Atributo selected</h2>
+        <p>
+            Este atributo funciona para poner un elemento de la lista del select por defecto, parecido al atributo checked de la etiqueta radio o checkbox.
+
+            <fieldset>
+                <legend>Ejemplo atributo selected</legend>
+                <form action="">
+                    <select name="Lenguajes">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JAVASCRIPT">JAVASCRIPT</option>
+                        <option value="JAVA" selected>JAVA</option>
+                        <option value="PHYTON">PHYTON</option>
+                        <option value="C++">C++</option>
+                        <option value="C">C</option>
+                    </select>
+                </form>
+            </fieldset>
+        </p>
+
+        <h2>Atributo min y max</h2>
+        <p>
+            Este atributo sirve para colocar un valor minimo y un valor maximo para la etiquete number, la cual establecera un rango para colocar numeros.
+
+            <fieldset>
+                <legend>Ejemplo atributo min y max</legend>
+                <form action="">
+                    <input type="number" placeholder="Numero movil" min = "5" max = "11" class = "numero">
+                    <button>Enviar</button>
+                </form>
+            </fieldset>
+        </p>
+
+        <h2>Atributo minlenght y maxlenght</h2>
+        <p>
+            Este atributo sirve para establecer un rango de cuantas letras minimo debe ingresar el usuario y cuantas maximo podra ingresar el usuario.
+
+            <fieldset>
+                <legend>Ejemplo minlenght y maxlenght</legend>
+                <form action="">
+                    <input type="text" placeholder = "Nombre" minlength="4" maxlength="11">
+                    <button>Enviar</button>
+                </form>
+            </fieldset>
+        </p>
+        
+        <h2>Atributo autofocus</h2>
+        <p>
+            Este atributo sirve para definir que campo del formulario apenas entra el usuario tenga el cursor automaticamente, este atributo solo lo podra tener un campo del formulario.
+
+            <fieldset>
+                <legend>Ejemplo atributo legend</legend>
+                <form action="">
+                    <input type="text" placeholder="Nombre" autofocus>
+                    <input type = "email" placeholder = "Correo">
+                    <input type = "password" placeholder = "Contraseña">
+                    <button>Enviar</button>
+                </form>
+            </fieldset>
+        </p>
+	</body>
+</html>

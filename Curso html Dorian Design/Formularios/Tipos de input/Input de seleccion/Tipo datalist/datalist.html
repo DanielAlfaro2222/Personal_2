@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Datalist</title>
+	</head>
+	<body>
+        <h1>Input de seleccion datalist</h1>
+        <p>
+            Este tipo de input es parecido al tipo de input select ya que es una lista de opciones que tiene el usuario para escoger, con la particularidad que el usuario puede buscar la opcion que necesite osea agregar un filtro para buscar la opcion que mas el guste.
+            <h2>Estructura basica</h2>
+            <div>
+                <ul>
+                    <li>&lt;form action = ""&gt;</li>
+                        <ul type = "disc">
+                            <li>&lt;input type = "list" list = ""&gt;</li>
+                            <li>&lt;datalist&gt;</li>
+                                <ul type = "disc">
+                                    <li>&lt;option value = ""&gt;&lt;/option&gt;</li>
+                                    <li>&lt;option value = ""&gt;&lt;/option&gt;</li>
+                                    <li>&lt;option value = ""&gt;&lt;/option&gt;</li>
+                                    <li>&lt;option value = ""&gt;&lt;/option&gt;</li>
+                                    <li>&lt;option value = ""&gt;&lt;/option&gt;</li>
+                                </ul>
+                            <li>&lt;/datalist&gt;</li>
+                        </ul>
+                    <li>&lt;/form&gt;</li>
+                </ul>
+            </div>
+
+            <fieldset>
+                <legend>Ejemplo</legend>
+                <form action="">
+                    <input type="list" list = "Equipos">
+                    <datalist id = "Equipos">
+                        <option value="America"></option>
+                        <option value="Santa fe"></option>
+                        <option value="DIM"></option>
+                        <option value="Nacional"></option>
+                        <option value="Pereira"></option>
+                        <option value="Once caldas"></option>
+                        <option value="Deportivo Cali"></option>
+                        <option value="Bogota"></option>
+                        <option value="Valledupar"></option>
+                        <option value="Boca junior"></option>
+                        <option value="Fortaleza"></option>
+                        <option value="Tigres"></option>
+                    </datalist>
+                </form>
+            </fieldset>
+        </p>
+    </body>
+</html>
