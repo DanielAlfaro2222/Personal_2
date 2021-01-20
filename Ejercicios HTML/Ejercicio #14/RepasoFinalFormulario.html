@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Repaso final formulario</title>
+		<style>
+			body{
+				background-color: rgb(80, 188, 250);
+			}
+			header {
+				height: 160px;
+			}
+			.Figura1 {
+				float: left;
+				margin-top: 10px;
+			}
+			.Figura2 {
+				float: right;
+				margin-top: 10px;
+			}
+			h1 {
+				display: inline;
+				font-size: 50px;
+				letter-spacing: 8px;
+				font-family: monospace;
+				margin: 0px 0px 0px 110px;
+			}
+			legend {
+				font-size: 38px;
+				font-weight: 700;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			footer {
+				border-top: 2px solid black;
+				background-color: rgb(167, 165, 165);
+				text-align: center;
+				font-size: 19px;
+			}
+			label {
+				font-size: 20px;
+				font-weight: 600;
+				display: block;
+				text-align: center;
+				margin-bottom: 15px;
+				
+			}
+			input {
+				width: 200px;
+				height: 25px;
+			}
+			.genero input{
+				width: 18px;
+				height: 18px;
+			}
+			.restablecer{
+				width: 90px;
+				height: 35px;
+				border: none;
+				border-radius: 5px;
+				margin-left: 20px;
+				margin-right: 25px;
+				margin-top: 20px;
+				background-color: rgb(228, 103, 103);
+			}
+			.enviar{
+				width: 90px;
+				height: 35px;
+				border: none;
+				border-radius: 5px;
+				margin-left: 135px;
+				margin-right: 25px;
+				margin-top: 20px;
+				background-color: rgb(228, 103, 103);
+			}
+			fieldset{
+				width: 500px;
+				margin: 0 auto;
+				border: 2px solid transparent;
+			}
+			.restablecer:hover{
+				color:white;
+				background-color: rgb(255, 50, 50);
+			}
+			.enviar:hover{
+				color:white;
+				background-color: rgb(255, 50, 50);
+			}
+			textarea{
+				margin: 0 auto;
+				display: block;
+			}
+			button{
+				margin-left: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<figure>
+				<img src="html5_logo.svg" alt="Logo html" class="Figura1" />
+				<h1>Repaso final Formulario</h1>
+				<img src="css3-logo.svg" alt="Logo css" class="Figura2" />
+			</figure>
+		</header>
+
+		<main>
+			<fieldset>
+				<legend>Formulario de contacto</legend>
+				<form action="#" method="POST">
+					<label>
+						Nombre
+						<input
+							type="text"
+							name="Nombre"
+							required
+							minlength="3"
+							maxlength="12"
+							autofocus
+						/>
+					</label>
+
+					<label>
+						Apellido
+						<input
+							type="text"
+							name="Apellido"
+							required
+							minlength="3"
+							maxlength="12"
+						/>
+					</label>
+
+					<label class = "genero">
+						Genero
+						<input type="radio" name = "Genero" value = "Hombre">
+						Hombre
+						<input type="radio" name = "Genero" value = "Mujer">
+						Mujer
+					</label>
+
+					<label>
+						Tipo de documento
+						<select name="Tipo de documento">
+							<option value="Tarjeta de identidad">
+								Tarjeta de identidad
+							</option>
+							<option value="Cedula de ciudadania">
+								Cedula de ciudadania
+							</option>
+							<option value="Cedula de extranjeria">
+								Cedula de extranjeria
+							</option>
+						</select>
+					</label>
+
+					<label>
+						Numero de documento
+						<input type = "text" minlength="1" maxlength="12" required name = "Numero de documento"></input>
+					</label>
+
+					<label>
+						Fecha de nacimiento
+						<input
+							type="date"
+							name="Fecha de nacimiento"
+							required
+						/>
+					</label>
+
+					<label>
+						Pais de residencia
+						<input type="list" required list = "Pais" name = "Pais">
+						<datalist id = "Pais">
+							<option value="Antigua y Barbuda"></option>
+							<option value="Argentina"></option>
+							<option value="Bahamas"></option>
+							<option value="Barbados"></option>
+							<option value="Belice"></option>
+							<option value="Bolivia"></option>
+							<option value="Brasil"></option>
+							<option value="Colombia"></option>
+							<option value="Costa rica"></option>
+							<option value="Cuba"></option>
+							<option value="Chile"></option>
+							<option value="Dominicana"></option>
+							<option value="Ecuador"></option>
+							<option value="El salvador"></option>
+							<option value="Granada"></option>
+							<option value="Guatemala"></option>
+							<option value="Guyana"></option>
+							<option value="Haiti"></option>
+							<option value="Honduras"></option>
+							<option value="Jamaica"></option>
+							<option value="Mexico"></option>
+							<option value="Nicaragua"></option>
+							<option value="Panama"></option>
+							<option value="Paraguay"></option>
+							<option value="Peru"></option>
+							<option value="Republica dominicana"></option>
+						</datalist>
+					</label>
+
+					<label>
+						Ciudad de residencia
+						<input type="list" list = "Ciudad" name = "Ciudad">
+						<datalist id = "Ciudad">
+							<option value="Arauca"></option>
+							<option value="Armenia"></option>
+							<option value="Barranquilla"></option>
+							<option value="Bogota"></option>
+							<option value="Bucaramanga"></option>
+							<option value="Cartagena"></option>
+							<option value="Cali"></option>
+							<option value="Cucuta"></option>
+							<option value="Monteria"></option>
+							<option value="Montoa"></option>
+							<option value="Pasto"></option>
+							<option value="Pereira"></option>
+						</datalist>
+					</label>
+
+					<label>
+						Correo electronico
+						<input type = "email" required name = "Correo">
+					</label>
+
+					<label>
+						Contraseña
+						<input type="password" minlength="8" maxlength="12" required name = "Contraseña">
+					</label>
+
+					<label>
+						Numero telefonico
+						<input type="tel" required name = "Numero movil">
+					</label>
+
+					<label>
+						Foto
+						<input type="file" name = "Archivo">
+					</label>
+
+					<textarea rows="10" cols = "35" placeholder="Aqui va tu comentario" name = "Comentario"></textarea>
+
+					<button class = "enviar">Enviar</button>
+					<input type="reset" class = "restablecer">
+				</form>
+			</fieldset>
+		</main>
+
+		<footer>&copy; Diseñado por Daniel Alfaro 2020 </footer>
+	</body>
+</html>
