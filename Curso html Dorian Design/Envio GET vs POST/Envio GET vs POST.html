@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GET vs POST</title>
+        <style>
+            img{
+                display: block;
+                margin: 0 auto;
+            }
+        </style>
+	</head>
+	<body>
+		<h1>Envio GET vs POST</h1>
+		<p> 
+            Estos dos atributos de la etiqueta &lt;form&gt; se utilizan para enviar la informacion que el usuario haya puesto en el formulario, por defecto si no llegasemos a indicar nada el envio se hara por el metodo GET.
+
+            <h2>Estructura basica</h2>
+            <pre>
+                <code>
+                    &lt;form action = "" method = ""&gt;
+                        //contenido del formulario
+                    &lt;/form&gt;
+                </code>
+            </pre>
+
+            <p>
+                <h3>Atributo action</h3>
+                El atributo action se usa para indicar a donde se deben enviar los datos, ya sea a un correo o una aplicacion que se encargue del procesamiento de los datos.
+
+                <h3>Atributo method</h3>
+                Este atributo le va a indicar al navegador por cual metodo se van a enviar los datos ya sea por GET o por POST.Ambos metodos son diferentes.
+
+                <h2>Metodo GET</h2>
+                <p>
+                    Este metodo lo que va a realizar es enviar los datos atraves de la url, este metodo no es recomendable usarlo en formularios de contacto ni en un login ya que los datos ingresados por el usuario se guardarian en el historial del navegador. <br><br>
+
+                    <img src="get.png" alt="Ejemplo de GET" width="650"><br>
+
+                    A continuacion veremos un ejemplo en el cual al llenar el formulario y enviarlos los datos se veran reflejados en la URL, cada dato maneja un nombre y un valor, cada dato del formulario va separado por ampersand como lo podemos ver en la imagen.
+
+                    <img src="GET2.png" alt="Demostracion de como se envian los datos" width="650" height="110">
+                </p>
+
+                <h2>Metodo POST</h2>
+                <p>
+                    Usando este metodo los datos se enviaran por detras de la pagina, este tipo de envio es bueno usarlo en un formulario de contacto o en un login. <br><br>
+
+                    <img src="post.png" alt="Ejemplo de POST" width="650"> <br><br>
+
+                    Para poder ver que datos se enviaron, desde el inspector de elementos podremos ver el nombre del campo y el valor de los datos que se enviaron. <br><br>
+
+                    <img src="POST2.PNG" alt="Demostracion del envio de datos" width="650">
+                </p>
+            </p>
+        </p>
+	</body>
+</html>
+
+
