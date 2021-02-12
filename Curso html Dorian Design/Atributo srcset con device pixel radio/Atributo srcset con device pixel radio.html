@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Atributo srcset con DPR</title>
+		<style>
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Atributo srcset con el device pixel radio</h1>
+		<p>
+			Este atributo nos va a permitir poner varias opciones dentro del
+			atributo srcset para que dependiendo del device pixel radio cargue
+			una u otra imagen, con esto nos ahorramos almacenamiento y velocidad
+			de carga de la pagina ya que si la pantalla es mas pequeña no
+			tendria sentido cargar una imagen grande, ademas que dependiendo del
+			device pixel radio la imagen podra ajustarse al tamaño de pantalla y
+			asi poder cargar mas rapido la pagina.
+		</p>
+		<p>
+			En el atributo srcset despues de la ruta deberemos especificar la
+			condicion para que el navegador dependiendo el device pixel radio
+			cargue la imagen que se acomode a ese al device pixel radio que
+			tenga la pantalla.Ademas cada opcion ira separado por coma.
+			<br /><br />
+			<img
+				src="Untitled.png"
+				alt="Codigo de ejemplo"
+				width="600"
+				height="400"
+			/>
+		</p>
+		<h1>Ejemplo</h1>
+		<img
+			srcset="Imagen-portatil.png, Imagen-movil.png 2x"
+			alt="Imagen de un paisaje"
+		/>
+	</body>
+</html>

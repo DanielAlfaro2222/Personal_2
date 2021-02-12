@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Iframes en HTML5</title>
+        <style>
+            iframe{
+                border: 2px solid black;
+                display: block;
+            }
+        </style>
+	</head>
+	<body>
+        <h1>Iframes en HTML5</h1>
+        <p>
+            Un iframe basicamente es tener una pagina web externa dentro de nuestra pagina, hay que usar la menor cantidad de iframes posibles ya que como nos estamos trayendo una pagina, la velocidad de carga de la pagina se podria ver afectada, es por eso que se recomienda usar pocos iframes.
+            
+            <h2>Atributos basicos</h2>
+            <div>
+                <ul>
+                    <li>
+                        src => Se usa para indicar la url donde se encuentra el sitio alojado
+                    </li>
+                    <li>
+                        width => Se usa para indicar el ancho del iframe.
+                    </li>
+                    <li>
+                        height => Se usa para indicar el largo del iframe.
+                    </li>
+                </ul>
+            </div>
+            <h2>Ejemplo</h2>
+            <iframe src="https://www.youtube.com/embed/hAgrrW5LM6M" width="500" height="300"></iframe>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7953.681205638856!2d-74.21203637667546!3d4.622511692369043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9fb20017bd1b%3A0x52f7e01820114fd5!2sConjunto%20Residencial%20VALLE%20DEL%20SOL!5e0!3m2!1ses-419!2sco!4v1612132338587!5m2!1ses-419!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1612132484529!6m8!1m7!1sWUdWS6q2x6Xn6YBjj8pJJA!2m2!1d4.624355903581946!2d-74.21085858749692!3f159.46902333885484!4f-5.709096005454967!5f0.7820865974627469" width="600" height="450"></iframe>
+        </p>
+    </body>
+</html>

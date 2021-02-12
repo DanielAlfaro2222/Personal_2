@@ -1,0 +1,53 @@
+tr {
+	border: 1px solid black;
+	height: 45px;
+}
+thead {
+	font-size: 35px;
+}
+tbody {
+	font-weight: bold;
+}
+caption {
+	font-size: 40px;
+}
+th {
+	border: 1px solid black;
+	width: 108px;
+}
+td {
+	border: 1px solid black;
+}
+table {
+	border-collapse: collapse;
+	text-align: center;
+	width: 650px;
+	margin: 0 auto;
+}
+.Azul-claro {
+	background-color: rgb(151, 181, 219);
+}
+.Azul-oscuro {
+	background-color: rgb(121, 172, 240);
+}
+.Recreo {
+	background-color: rgb(121, 172, 240);
+	height: 45px;
+	font-size: 25px;
+	border: none;
+	text-align: center;
+}
+.Pie-de-pagina {
+	border: 1px solid black;
+	background-color: rgb(121, 172, 240);
+	font-size: 25px;
+}
+td:hover {
+	background-color: chartreuse;
+	color: wheat;
+	border: hidden;
+}
+th:hover {
+	background-color: darkgoldenrod;
+	color: white;
+}

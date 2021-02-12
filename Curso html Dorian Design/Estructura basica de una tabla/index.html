@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Estructura basica de una tabla</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Estructura basica de una tabla</h1>
+        <p>
+            A continuacion veremos la estructura basica de una tabla en html: 
+            <div>
+                <ol>
+                    <li>Abertura Etiqueta table</li>
+                        <ol start = "2">
+                            <li>Etiqueta caption para el titulo</li>
+                            <li>Etiqueta thead para el encabezado de la tabla</li>
+                                <ul>
+                                    <li>Etiqueta tr para una nueva fila</li>
+                                        <ul>
+                                            <li>
+                                                Etiqueta th para ir creando las columnas de la fila
+                                            </li>
+                                        </ul>
+                                </ul>
+                            <li>Etiqueta tbody para el contenido de la tabla</li>
+                                <ul>
+                                    <li>Etiqueta tr para una nueva fila</li>
+                                        <ul>
+                                            <li>
+                                                Etiqueta td para ir creando las columnas de la fila
+                                            </li>
+                                        </ul>
+                                </ul>
+                            <li>Etiqueta tfoot para el pie de pagina de la tabla</li>
+                                <ul>
+                                    <li>
+                                        Aqui aplica lo mismo tr para una nueva fila y td para ir llenado las columnas de la fila
+                                    </li>
+                                </ul>
+                        </ol>
+                    <li value  = "1">Cierre etiqueta table</li>
+                </ol>
+            </div>
+        </p>
+
+        <h2>Ejemplo usando HTML y CSS</h2>
+        <table>
+            <caption>HORARIO DE CLASES</caption>
+
+            <thead>
+                <tr>
+                    <th class = "Azul-claro"></th>
+                    <th class = "Azul-oscuro" >L</th>
+                    <th class = "Azul-oscuro">M</th>
+                    <th class = "Azul-oscuro">X</th>
+                    <th class = "Azul-oscuro">J</th>
+                    <th class = "Azul-oscuro">V</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class = "Azul-claro">8:30-9:30</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                    <td>Sociales</td>
+                    <td>Matematicas</td>
+                    <td>Matematicas</td>
+                </tr>
+                <tr>
+                    <td class = "Azul-claro">9:30-10:25</td>
+                    <td>Lengua</td>
+                    <td>Lengua</td>
+                    <td>Matematicas</td>
+                    <td>Ciencias</td>
+                    <td>Lengua</td>
+                </tr>
+                <tr>
+                    <td class = "Azul-claro">10:25-11:20</td>
+                    <td>Educacion fisica</td>
+                    <td>Ciencias</td>
+                    <td>Lengua</td>
+                    <td>Lengua</td>
+                    <td>Educacion fisica</td>
+                </tr>
+                <tr>
+                    <td class = "Azul-claro">11:20-11:45</td>
+                    <td class = "Recreo" colspan="5">RECREO</td>
+                </tr>
+                <tr>
+                    <td class = "Azul-claro">11:45-12:40</td>
+                    <td>Ingles</td>
+                    <td>Sociales</td>
+                    <td>Ingles</td>
+                    <td>Tutoria</td>
+                    <td>Ingles</td>
+                </tr>
+                <tr>
+                    <td class = "Azul-claro">12:40-1:35</td>
+                    <td>Musica</td>
+                    <td>Educacion fisica</td>
+                    <td>Plastica</td>
+                    <td>Religion</td>
+                    <td>Musica</td>
+                </tr>
+                <tr>
+                    <td class = "Azul-claro">1:35-2:30</td>
+                    <td>Tecnologia</td>
+                    <td>Frances</td>
+                    <td>Tecnologia</td>
+                    <td>Tecnologia</td>
+                    <td>Frances</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr class = "Pie-de-pagina">
+                    <td class = "Pie-de-pagina" colspan = "5"><b>Total de asignaturas:</b> </td>
+                    <td class = "Pie-de-pagina">12</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Etiqueta de audio</title>
+	</head>
+	<body>
+		<h1>Etiqueta audio</h1>
+		<p>
+			En HTML5 podemos insertar audio de una manera muy facil, usando la etiqueta audio.
+			<div>
+				<h2>Atributos</h2>
+				<ul>
+					<li>
+						Autoplay => Se usa para indicarle al navegador que una vez que se entre o recargue la pagina, el audio automaticamente se reproducira.
+					</li>
+					<li>
+						Mute => Se usa para decirle al navegador que una vez que empiece a reproducirse el audio, no tendra sonido o lo tendra apagado.
+					</li>
+					<li>
+						loop => Se usa como bucle para que la cancion cuando se acabe vuelva a repetirse.
+					</li>
+					<li>
+						controls => Se usa para proporcionar controles al audio, para pausar la musica, adelantar, bajar el volumen etc... 
+					</li>
+				</ul>
+			</div>
+			<h2>Ejemplo</h2>
+		</p>
+		<audio
+			src="assets/y2mate.com - Hypnotize 2007 Remaster.mp3"
+			controls
+			autoplay
+			muted
+			loop
+		></audio>
+	</body>
+</html>

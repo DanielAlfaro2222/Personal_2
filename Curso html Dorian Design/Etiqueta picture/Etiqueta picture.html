@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Etiqueta picture</title>
+	</head>
+	<body>
+        <section>
+            <h1>Etiqueta picture</h1>
+            <p>
+                Esta etiqueta se usa para especificar un numero especifico de opciones, en las cuales se especificaran con la etiqueta source y usando el atributo media podremos especificar la condicion que leeera el navegador, tambien aparte de las opciones (etiqueta source) tendremos una etiqueta img que se usa para especificar que si el navegador no escoge alguna de las opciones que estan dentro de la etiqueta source, pues cargara lo que haya dentro de la etiqueta img. 
+            </p>
+            <article>
+                <h2>Source</h2>
+                <p>
+                    La etiqueta source representara una opcion, cada opcion que nosotros pongamos se representara a traves de un source.
+
+                    <div>
+                        <h3>Atributos</h3>
+                        <ul>
+                            <li>
+                                srcset => indica la ruta donde se encuentra el archivo, puede ser una ruta relativa o una ruta absoluta.
+                            </li>
+                            <li>
+                                media => indica la condicion mediante el cual cargara el archivo, si esta condicion se cumple, se cargara el archivo.
+                            </li>
+                        </ul>
+                    </div>
+                </p>
+            </article>
+            <article>
+                <h2>Ejemplo</h2>
+                <p>
+                    Podremos desde el inspector de elementos achicar o agrandar el tamaño de la pantalla y asi poder ver como dependiendo del tamaño cargara una imagen o otra.
+                </p>
+                <picture>
+                    <source srcset = "assets/Prueba_1920.jpg" media = "(min-width: 1600px)">
+                    <source srcset = "assets/Prueba_1500.jpg" media = "(min-width: 1400px)">
+                    <source srcset = "assets/Prueba_1300.png" media = "(min-width: 1000px)">
+                    <source srcset = "assets/Prueba_800.png" media = "(min-width: 600px)">
+                    
+                    <img src="assets/logo.png" alt = "">
+                </picture>
+            </article>
+        </section>
+    </body>
+</html>
