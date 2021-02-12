@@ -1,0 +1,167 @@
+/* ===========> HEADER <============= */
+nav {
+	display: inline-flex;
+	position: fixed;
+	align-items: center;
+	justify-items: center;
+	background-color: rgb(83, 107, 240);
+	width: 100%;
+	height: 50px;
+}
+.Posicion-navegacion {
+	display: inline;
+	margin-left: 820px;
+}
+.Imagen-header {
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+}
+.Imagen-header img {
+	margin-top: 2px;
+	margin: 0 auto;
+	width: 100%;
+}
+.Navegacion {
+	display: inline-flex;
+	align-items: center;
+	justify-items: center;
+	margin-left: 10px;
+	width: 100px;
+	height: 40px;
+	text-decoration: none;
+	color: black;
+}
+.Navegacion:hover {
+	color: white;
+	background-color: rgb(41, 70, 235);
+}
+li {
+	display: inline-block;
+	font-size: 18px;
+	text-justify: center;
+}
+/* ===========> MAIN <============= */
+body {
+	background-color: rgb(223, 223, 223);
+}
+h2 {
+	font-size: 29px;
+	margin-left: 15px;
+}
+.Flecha {
+	display: block;
+	position: fixed;
+	float: right;
+	color: rgb(98, 246, 72);
+}
+main {
+	/* border: 2px solid black; */
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.Descripcion-perfil {
+	display: inline-block;
+	/* background-color: brown; */
+	width: 48%;
+	height: 260px;
+	margin-left: 15px;
+	font-size: 20px;
+}
+.Foto-perfil {
+	display: inline-block;
+	/* background-color: blue; */
+	margin-left: 15px;
+	width: 48%;
+	height: 260px;
+}
+.Foto-perfil img {
+	display: block;
+	width: 300px;
+	height: 260px;
+	margin: 0 auto;
+}
+.Perfil {
+	display: block;
+	/* border: 1px solid black; */
+}
+.Perfil p {
+	display: inline;
+}
+.Logos-experiencia {
+	width: 130px;
+	height: 240px;
+	margin-left: 20px;
+}
+.Experiencia {
+	display: block;
+	width: 100%;
+	height: 347px;
+}
+.Experiencia-reseña {
+	display: inline-block;
+	/* border: 1px solid black; */
+	width: 48%;
+	height: 260px;
+	margin-left: 15px;
+	font-size: 20px;
+}
+.Experiencia-reseña p {
+	display: inline;
+}
+
+.Experiencia-logos {
+	display: inline-flex;
+	align-items: center;
+	/* border: 1px solid black; */
+	width: 48%;
+	height: 260px;
+	margin-left: 15px;
+}
+.Experiencia-logos-container {
+	/* background-color: aqua; */
+	display: block;
+	margin: 0 auto;
+}
+
+/* ===========> Footer <============= */
+footer {
+	margin-top: 10px;
+	background-color: rgb(83, 107, 240);
+	height: 240px;
+}
+input {
+	border-radius: 5px;
+	border: none;
+}
+input,
+button {
+	display: block;
+	margin-bottom: 10px;
+}
+fieldset {
+	display: inline;
+	width: 300px;
+	height: 210px;
+	margin-left: 40px;
+	border: none;
+}
+legend {
+	font-size: 24px;
+	font-weight: 800;
+}
+.Derechos {
+	display: inline;
+	margin-left: 60px;
+	font-size: 20px;
+}
+button {
+	width: 70px;
+	height: 30px;
+	background-color: rgb(81, 255, 0);
+	border: none;
+	border-radius: 5px;
+}
+button:hover {
+	background-color: rgb(0, 255, 21);
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="assets/html5_logo.svg" />
+		<script
+			src="https://kit.fontawesome.com/92318589eb.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="style.css" />
+		<title>Borrador de mi portafolio</title>
+	</head>
+	<body>
+		<header id="Inicio">
+			<nav>
+				<ul class="Posicion-navegacion">
+					<li><a href="#Inicio" class="Navegacion">Inicio</a></li>
+					<li><a href="#Perfil" class="Navegacion">Perfil</a></li>
+					<li>
+						<a href="#Experiencia" class="Navegacion">
+							Experiencia
+						</a>
+					</li>
+					<li>
+						<a href="#Pie de pagina" class="Navegacion">
+							Contactame
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<figure class="Imagen-header">
+				<img
+					src="assets/fondo.jfif"
+					alt="Imagen de programacion"
+					width="1300"
+					height="320"
+				/>
+			</figure>
+		</header>
+
+		<main>
+			<section id="Perfil" class="Perfil">
+				<h2>Perfil</h2>
+				<article class="Descripcion-perfil">
+					<h3>
+						Hola mi nombre es Daniel Alfaro, soy desarrollador
+						frontend junior
+					</h3>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit. Perspiciatis facilis corporis quis, nobis numquam
+						distinctio. Dolor incidunt deleniti, architecto possimus
+						aperiam, vel, quis perferendis sunt odio voluptatibus ex
+						cupiditate asperiores. Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit. Dolore et vero, delectus
+						at aspernatur molestiae vitae, assumenda nisi
+						voluptatibus quia dolores consequatur accusamus corporis
+						quaerat, incidunt ipsam deleniti asperiores tempore.
+					</p>
+				</article>
+				<article class="Foto-perfil">
+					<img src="assets/foto de perfil.png" alt="Logo de CSS3" />
+				</article>
+			</section>
+
+			<section id="Experiencia" class="Experiencia">
+				<h2>Experiencia</h2>
+				<article class="Experiencia-reseña">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Hic, itaque voluptates. Odit a praesentium eveniet
+						laudantium. Natus aliquam, accusantium qui mollitia
+						dolore quae, id quasi, eius animi provident rem nemo.
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Corporis et ipsa molestiae vel quia dignissimos,
+						aut iusto, sint sapiente possimus esse fugit labore
+						deserunt nobis nostrum mollitia excepturi itaque odit.
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Fugit recusandae eius nulla minima, aperiam nihil
+						odio, reprehenderit ratione odit maiores voluptatem
+						praesentium et eveniet nobis voluptatum? Qui architecto
+						facere sapiente. Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Laudantium cumque delectus consectetur
+						voluptas saepe sit corrupti debitis. Iste laudantium
+						possimus quam.
+					</p>
+				</article>
+				<article class="Experiencia-logos">
+					<figure class="Experiencia-logos-container">
+						<img
+							src="assets/html5_logo.svg"
+							alt="Logo HTML5"
+							class="Logos-experiencia"
+						/>
+						<img
+							src="assets/css3-logo.svg"
+							alt="Logo CSS3"
+							class="Logos-experiencia"
+						/>
+
+						<img
+							src="assets/Javascript.png"
+							alt="Logo Javascript"
+							class="Logos-experiencia"
+						/>
+
+						<img
+							src="assets/phyton.jfif"
+							alt="Logo Phyton"
+							class="Logos-experiencia"
+						/>
+					</figure>
+				</article>
+			</section>
+
+			<div class="Flecha">
+				<a href="#Inicio">
+					<i class="fas fa-arrow-alt-circle-up fa-5x"></i>
+				</a>
+			</div>
+		</main>
+
+		<footer id="Pie de pagina">
+			<fieldset>
+				<legend>Contactame</legend>
+				<form action="#" method="POST">
+					<input
+						type="text"
+						required
+						name="Nombre"
+						placeholder="Tu nombre aqui"
+						minlength="5"
+						maxlength="20"
+					/>
+					<input
+						type="text"
+						required
+						name="Apellido"
+						placeholder="Tu Apellido aqui"
+						minlength="5"
+						maxlength="20"
+					/>
+					<input
+						type="email"
+						name="Correo"
+						required
+						placeholder="Tu correo aqui"
+					/>
+					<textarea
+						name="Mensaje"
+						cols="30"
+						rows="5"
+						placeholder="Tu mensaje aqui"
+					></textarea>
+					<button>Enviar</button>
+				</form>
+			</fieldset>
+			<p class="Derechos">
+				&copy; Diseñado por Daniel Alfaro | Todos los derechos
+				reservados 2021
+			</p>
+		</footer>
+	</body>
+</html>

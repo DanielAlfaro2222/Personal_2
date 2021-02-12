@@ -1,0 +1,294 @@
+* {
+	margin: 0px;
+}
+/* =========> HEADER <========= */
+.Nav-header {
+	background-color: rgb(29, 29, 245);
+	border-bottom: 7px solid #29abe2;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	height: 58px;
+}
+.Nav-header ul {
+	margin-left: 90px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+.Nav-header li {
+	display: inline-block;
+	margin-right: 32px;
+}
+.Nav-header img {
+	width: 30px;
+	height: 28px;
+}
+.Nav-header a:hover {
+	color: #29abe2;
+}
+.Nav-header a {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Div-middle {
+	width: 100%;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+h1 {
+	font-size: 56px;
+	font-family: 'Poiret One', cursive;
+	color: #819ba5;
+	margin: 0 auto;
+}
+.Nav-footer {
+	background-color: #29abe2;
+	border-bottom: 7px solid rgb(29, 29, 245);
+	height: 67px;
+}
+.Nav-footer li {
+	display: inline-block;
+}
+.Nav-footer ul {
+	height: 100%;
+	margin-left: 130px;
+}
+.Nav-footer a {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	font-size: 19px;
+	color: white;
+	text-decoration: none;
+	padding: 1.3em 2.7em 1em;
+}
+.Nav-footer li:hover {
+	background-color: rgb(29, 29, 245);
+}
+.Menu {
+	text-justify: auto;
+}
+/* =========> MAIN <========= */
+.Logos-Torneos {
+	width: 120px;
+	height: 120px;
+	margin-right: 22px;
+}
+.Container-Torneos {
+	display: block;
+	width: 100%;
+	height: 1000px;
+}
+.Container-Torneos h2 {
+	font-size: 36px;
+	color: #29abe2;
+	font-family: 'Poiret One', cursive;
+	margin-bottom: 25px;
+}
+.Container-left {
+	display: inline-block;
+	width: 47%;
+	margin-left: 125px;
+	margin-top: 34px;
+	float: left;
+	margin-right: 23px;
+	/* border: 2px solid black; */
+}
+.Container-left img {
+	display: block;
+	margin: 0 auto;
+}
+.Text-Container-Left {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 19px;
+	line-height: 1.8em;
+	color: #868686;
+}
+.Text-small {
+	display: block;
+	color: #b3b3b3;
+	font-size: 16px;
+	line-height: 1.6em;
+}
+.Container-right {
+	display: inline-block;
+	width: 33%;
+	margin-right: 120px;
+	margin-top: 34px;
+	float: left;
+	/* border: 2px solid black; */
+}
+.Container-Informacion-Torneos {
+	width: 445px;
+	height: 130px;
+	margin-bottom: 20px;
+}
+.Container-Informacion-Torneos p {
+	display: inline;
+}
+.Container-Informacion-Torneos h3 {
+	display: inline;
+}
+.Container-Torneos h3 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.Section-Nuestro-Grupo {
+	background: url(assets/Images/Grupo.png);
+	width: 100%;
+	height: 640px;
+}
+.Section-Participaciones {
+	background: url(assets/Images/Participaciones.png);
+	width: 100%;
+	height: 640px;
+}
+.Section-Liga-Femenina {
+	background: url(assets/Images/LigaFemenina.png);
+	width: 100%;
+	height: 640px;
+}
+.Section-Liga-Argos {
+	background: url(assets/Images/LigaArgos.png);
+	width: 100%;
+	height: 640px;
+}
+.Section-Noticias {
+	background-color: rgb(207, 207, 207);
+	width: 100%;
+	height: 500px;
+}
+.Section-Noticias h2 {
+	font-size: 35px;
+	color: #ffffff;
+	text-align: center;
+	margin: 0px;
+	padding-top: 40px;
+}
+.Section-Noticias h3 {
+	font-size: 20px;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+.Section-Noticias p {
+	font-size: 16px;
+	color: #ffffff;
+}
+.Article-Congreso-Tecnico {
+	display: inline-block;
+	margin-left: 120px;
+	margin-right: 20px;
+	margin-top: 50px;
+	width: 357px;
+	height: 320px;
+}
+.Article-Final-Tabora {
+	display: inline-block;
+	width: 357px;
+	height: 320px;
+}
+.Article-Final-Bosa {
+	display: inline-block;
+	width: 357px;
+	height: 320px;
+	margin-right: 20px;
+}
+
+/* =========> FOOTER <========= */
+
+footer {
+	background-color: rgb(207, 207, 207);
+	height: 340px;
+}
+footer li {
+	display: inline-block;
+}
+fieldset {
+	display: inline-block;
+	border: transparent;
+	margin-right: 5px;
+	height: 220px;
+	padding: 0px;
+}
+.Footer-Redes {
+	display: inline-block;
+	width: 200px;
+	height: 110px;
+	font-family: 'Raleway', sans-serif;
+	color: #333333;
+}
+.Footer-Redes h3 {
+	margin-bottom: 20px;
+	text-align: initial;
+}
+footer ul {
+	display: inline-block;
+	padding: 0px;
+}
+.Footer-Ubicacion {
+	display: inline-block;
+	width: 310px;
+	height: 190px;
+	margin-left: 200px;
+	margin-right: 5px;
+	font-family: 'Raleway', sans-serif;
+	color: #333333;
+}
+.Footer-Ubicacion p {
+	color: rgb(255, 255, 255);
+	margin-top: 12px;
+}
+legend {
+	font-size: 36px;
+	font-weight: 600;
+	color: #333333;
+	font-family: 'Raleway', sans-serif;
+}
+article h3 {
+	font-size: 36px;
+	font-family: 'Raleway', sans-serif;
+	color: #333333;
+}
+.Redes {
+	text-decoration: none;
+	color: rgb(149, 149, 149);
+}
+.Redes:hover {
+	background-color: rgb(195, 195, 195);
+}
+.Autor {
+	color: rgb(35, 105, 235);
+	text-decoration: none;
+}
+.Copyright {
+	height: 70px;
+	border-top: 3px solid white;
+	text-align: center;
+	margin-top: 20px;
+}
+input {
+	width: 300px;
+	height: 40px;
+	font-size: 15px;
+	margin-top: 15px;
+}
+.Input-name {
+	display: block;
+}
+button {
+	width: 150px;
+	height: 45px;
+	background-color: rgb(29, 29, 245);
+	color: white;
+	font-size: 15px;
+}
+button:hover {
+	background-color: rgb(104, 104, 104);
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio #15</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<figure>
+				<img
+					src="assets/1280px-Amazon_logo.svg.png"
+					alt="Logo de amazon"
+				/>
+				<sub>.com.mx</sub>
+			</figure>
+		</header>
+
+		<main>
+			<fieldset>
+				<form action="#" method="POST">
+					<button class="Titulo-formulario">Crear cuenta</button>
+
+					<label for="Nombre">Tu nombre</label>
+					<input
+						type="text"
+						name="Nombre"
+						id="Nombre"
+						required
+						autofocus
+						tabindex="1"
+					/>
+
+					<label for="Correo">Correo electronico</label>
+					<input
+						type="text"
+						name="Correo"
+						id="Correo"
+						required
+						tabindex="2"
+					/>
+
+					<label for="Contraseña">Contraseña</label>
+					<input
+						type="password"
+						name="Contraseña"
+						id="Contraseña"
+						placeholder="Debe contener almenos 6 caracteres"
+						minlength="6"
+						maxlength="12"
+						required
+						class="Contraseña"
+						tabindex="3"
+					/>
+
+					<button class="Info-contraseña">
+						<a
+							href="#"
+							class="Simbolo-informacion"
+							title="La contraseña debe contener almenos 6 caracteres"
+						>
+							&iexcl;
+						</a>
+						La contraseña debe contener almenos 6 caracteres
+					</button>
+
+					<label for="Confirmacion-Contraseña">
+						Vuelve a escribir la Contraseña
+					</label>
+					<input
+						type="password"
+						name="Confirmacion Contraseña"
+						id="Confirmacion-Contraseña"
+						minlength="6"
+						maxlength="12"
+						required
+						tabindex="4"
+					/>
+
+					<button class="Crear-cuenta" tabindex="5">
+						Crea tu cuenta de Amazon
+					</button>
+
+					<button class="Condiciones">
+						Al crear una cuenta, aceptas las
+						<a href="#">Condiciones de Uso</a> y el
+						<a href="#">Aviso de Privacidad</a> de Amazon.
+					</button>
+
+					<button class="Iniciar-sesion">
+						¿Ya tienes una cuenta? <a href="#">Iniciar sesion</a>
+					</button>
+				</form>
+			</fieldset>
+		</main>
+
+		<footer> &copy; Diseñado por Daniel Alfaro 2020 </footer>
+	</body>
+</html>

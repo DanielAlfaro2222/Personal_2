@@ -1,0 +1,115 @@
+/* =========> HEADER <========== */
+
+img {
+	display: inline;
+	border: 1px solid transparent;
+	width: 130px;
+	height: 42px;
+	margin-left: 20px;
+}
+figure {
+	text-align: center;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	width: 200px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 25px;
+}
+sub {
+	font-size: 19px;
+}
+
+/* ========> Main <=========== */
+fieldset {
+	width: 330px;
+	height: 470px;
+	margin: 0 auto;
+	margin-bottom: 45px;
+	border: 1px solid rgb(179, 176, 176);
+}
+label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 3px;
+	margin-left: 15px;
+	font-size: 14px;
+}
+input {
+	display: block;
+	width: 290px;
+	height: 25px;
+	margin-left: 15px;
+	margin-bottom: 12px;
+}
+.Condiciones {
+	display: block;
+	border: none;
+	background-color: white;
+	margin-left: 10px;
+	margin-right: 5px;
+	font-size: 12px;
+	width: 299px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+.Crear-cuenta {
+	display: block;
+	width: 298px;
+	margin-left: 15px;
+	height: 31px;
+	border-radius: 4px;
+	background: #f7971e;
+	background: -webkit-linear-gradient(to bottom, #ffe365, #f6ba71);
+	background: linear-gradient(to bottom, #ffe365, #f6ba71);
+	margin-bottom: 13px;
+}
+.Iniciar-sesion {
+	display: block;
+	border: none;
+	background-color: white;
+	font-size: 14px;
+	margin-left: 9px;
+}
+a {
+	text-decoration: none;
+	color: rgb(37, 102, 255);
+}
+.Titulo-formulario {
+	display: block;
+	font-weight: 600;
+	font-size: 30px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	border: none;
+	background-color: white;
+	margin-left: 7px;
+}
+.Info-contraseña {
+	width: 290px;
+	height: 25px;
+	margin-left: 15px;
+	font-size: 11.5px;
+	color: darkgray;
+	border: none;
+	background-color: white;
+	margin-bottom: 10px;
+}
+.Simbolo-informacion {
+	font-size: 18px;
+	font-style: italic;
+}
+.Contraseña {
+	margin-bottom: 5px;
+	font-size: 13px;
+}
+/* ========> FOOTER <=========== */
+
+footer {
+	border-top: 2px solid black;
+	text-align: center;
+	font-size: 20px;
+	background-color: darkgray;
+}
