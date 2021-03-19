@@ -1,0 +1,73 @@
+/* -------------------ESTILOS GENERALES DEL BODY---------------- */
+body {
+	background-color: beige;
+}
+
+/* -------------------ESTILOS DEL HEADER------------------------ */
+.main-header {
+	max-width: 100%;
+	height: 500px;
+	background-color: transparent;
+	background-image: url(descarga.gif);
+	position: relative;
+	top: 0;
+	padding: 20px;
+	text-align: center;
+	border: 2px solid black;
+}
+.list-menu {
+	width: 100%;
+	height: 40px;
+	margin: 0 2em 0 0;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgb(30, 11, 90);
+	text-align: end;
+}
+.list-menu__item {
+	display: inline-block;
+	margin: 0 1em 0 0;
+	border-bottom: 2px solid red;
+}
+.list-menu__link {
+	color: white;
+}
+.list-menu__link:hover {
+	color: rgb(153, 148, 148);
+}
+
+/* ----------------------ESTILOS DEL MAIN----------------------- */
+.main {
+	margin: 1.8em;
+}
+
+.main__subtitle::first-letter {
+	color: red;
+	font-size: 2em;
+}
+.main__paragraph::first-line {
+	color: blue;
+	text-decoration: underline;
+}
+.main__paragraph::after {
+	content: 'Termina el parrafo';
+	display: block;
+	color: lime;
+}
+
+/* ----------------------ESTILOS DEL FOOTER---------------------- */
+.main-footer {
+	background-color: rgb(30, 11, 90);
+	width: 100%;
+	height: 30px;
+	padding: 4px;
+	text-align: center;
+	font-size: 1em;
+	border: 2px solid black;
+	color: white;
+}
+.main-footer__paragraph {
+	margin: 0;
+}

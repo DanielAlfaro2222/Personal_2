@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="../Resetear los estilos de los navegadores/normalize.css"
+		/>
+		<link rel="stylesheet" href="Outline.css" />
+		<title>Propiedad outline</title>
+	</head>
+	<body>
+		<h1>Propiedad outline</h1>
+		<p>
+			Esta propiedad es una linea que rodea a la caja, a diferencia del border, que tambien dibuja una linea que rodea a la caja, el outline no aumenta el tamaño real de la caja, ademas que la linea de alrededor se dibuja por encima, haciendo que si hay otras cajas alrededor estas no se moveran, en cambio border si corre las cajas de alrededor.
+
+			<p>
+				El outline es un shorthand, el cual usando una sola propiedad, podremos afectar a otras propiedades, ademas tiene cuatro propiedades mas outline-style, outline-color, outline-width y outline-offset. Cada una de estas propiedades va a manejar cuatro valores, los cuales afectaran a cada uno de los lados, el primer valor afectara al lado superior, el segundo valor afectara al lado derecho, el tercer valor afectara al lado inferior, el cuarto valor afectara al lado izquierdo. <strong>Ademas si usamos el shorthand se va a afectar a todos los lados de la caja, no podremos modificar un solo lado de la caja, siempre se modificaran todos los lados de la caja</strong>
+
+				<h2>Shorthand que podremos usar</h2>
+				<ul>
+					<li>outline(asi solo para modificar color, style, width y offset)</li>
+					<li>outline-color</li>
+					<li>
+						outline-offset(modifica el espacio entre el outline y el borde de la caja, para usarlo antes hay que definir el color, tamaño y estilo del outline, sino no va a funcionar, ademas podremos usar valores negativos.
+					</li>
+					<li>outline-style(modifica el color de la linea)</li>
+					<li>outline-width(modifica el tamaño de las lineas)</li>
+				</ul>
+			</p>
+
+			<h2>Sintaxis usando el shorthand para todos los lados</h2>
+			<pre>
+				<code>
+					[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]
+				</code>
+			</pre>
+		</p>
+		<h2>Ejemplo usando el offset</h2>
+		<div></div>
+	</body>
+</html>

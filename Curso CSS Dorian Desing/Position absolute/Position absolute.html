@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="../Resetear los estilos de los navegadores/normalize.css"
+		/>
+		<link rel="stylesheet" href="Position absolute.css" />
+		<title>Position absolute</title>
+	</head>
+	<body>
+		<h1>Position absolute</h1>
+		<p>
+			El posicionamiento absoluto es cuando un elemento, pierde su espacio
+			en el flujo del HTML.
+		</p>
+
+		<h2>Curiosidades sobre position absolute</h2>
+		<ol>
+			<li>
+				Cuando un elemento es posicionado absolutamente, el elemento
+				pierde el espacio que tenia en el flujo del documento HTML.
+			</li>
+			<li>
+				Cuando un elemento es posicionado absolutamente, su tamaño
+				estara determinado por el tamaño de su contenido.
+			</li>
+			<li>
+				Cuando un elemento es posicionado absolutamente y usemos las
+				propiedades de movimiento (top, left, right, bottom), el
+				movimiento lo hara respecto a su contenedor ancestro o padre, si
+				no hay un contenedor padre o ancestro posicionado, se movera
+				respecto al body o viewport.
+			</li>
+		</ol>
+
+		<h2>
+			Propiedades que se desbloquean cuando usamos position (top y left
+			pesan mas que las demas propiedades)
+		</h2>
+		<ul>
+			<li>
+				<span>top</span> => Se movera hacia arriba respecto a su
+				contenedor ancestro, acepta valores positivos o negativos.
+			</li>
+			<li>
+				<span>left</span> => Se movera hacia la izquierda respecto a su
+				contenedor ancestro, acepta valores positivos o negativos.
+			</li>
+			<li>
+				<span>right</span> => Se movera hacia la derecha respecto a su
+				contenedor ancestro, acepta valores positivos o negativos.
+			</li>
+			<li>
+				<span>bottom</span> => Se movera hacia abajo respecto a su
+				contenedor ancestro, acepta valores positivos o negativos.
+			</li>
+		</ul>
+
+		<h2>
+			Ejemplo de un contenedor padre (position relative) con contenedores
+			hijos (position absolute)
+		</h2>
+		<div class="container">
+			<div class="box-1"></div>
+			<div class="box-2"></div>
+			<div class="box-3"></div>
+			<div class="box-4"></div>
+			<div class="box-5"></div>
+		</div>
+	</body>
+</html>

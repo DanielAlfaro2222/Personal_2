@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="boxmodel.css" />
+		<title>Box-model</title>
+	</head>
+	<body>
+		<h1>Box-model o modelo de caja</h1>
+
+		<h2>Elementos en linea</h2>
+		<p>
+			Los elementos en linea, son los que su tamaño se ve determinado por
+			su numero de caracteres, osea su tamaño dependera de su contenido, a
+			este elemento no podremos modificarle ni el ancho ni el alto, para
+			modificarlo tendremos que cambiarle el display por display: block o
+			display: inline-block.
+		</p>
+		<span>Ejemplo de elemento en linea</span>
+		<h2>Elementos en bloque</h2>
+		<p>
+			Los elementos en bloque, son los que sin importar su tamaño o numero
+			de caracteres, ocupara todo el ancho de la pagina, a este elemento
+			si podremos modificarle su ancho y su alto.
+		</p>
+		<p>Ejemplo de elemento en bloque</p>
+		<h2>Propiedades que cuentan para el tamaño del modelo de caja</h2>
+		<ul>
+			<li>contenido</li>
+			<li>padding</li>
+			<li>Border</li>
+		</ul>
+		<h2>Propiedades que no cuentan para el tamaño del modelo de caja</h2>
+		<ul>
+			<li>outline</li>
+			<li>margin</li>
+		</ul>
+		<div class="box-1"></div>
+		<div class="box-2"></div>
+	</body>
+</html>

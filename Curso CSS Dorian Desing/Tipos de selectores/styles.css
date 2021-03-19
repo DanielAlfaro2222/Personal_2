@@ -1,0 +1,91 @@
+/* Selector de etiqueta */
+
+body {
+	background-color: rgb(190, 181, 168);
+}
+
+/* Selector de id */
+
+#Selector-id {
+	color: blue;
+}
+
+/* Selector de clase */
+
+.Selector-clase {
+	color: rgb(132, 31, 226);
+}
+
+/* Selector universal */
+
+* {
+	font-size: 25px;
+}
+
+/* =============> Selectores de atributos <================ */
+
+/* Mismo atributo */
+
+[href] {
+	color: green;
+}
+
+/* Mismo atributo y mismo valor */
+
+[href='#'] {
+	color: brown;
+}
+
+/* Mismo atributo y el valor por lo menos una vez */
+
+[class~='Rojo'] {
+	color: rgba(21, 124, 221, 0.931);
+}
+
+/* Mismo atributo y exactamente ese valor o empiece por ese valor seguido de un guion */
+
+[class|='Azul'] {
+	color: chocolate;
+}
+
+/* Mismo atributo y que finalicen con el valor */
+
+[class$='Yellow'] {
+	color: darkgoldenrod;
+}
+
+/* Mismo atributo y valor sin importar la posicion del valor*/
+
+[class*='Green'] {
+	color: hotpink;
+}
+
+/* ===========> Selectores combinadores <================ */
+
+/* Selector de hermano adyacente */
+
+h1 + h3 {
+	color: red;
+}
+
+h3 + h3 {
+	color: blue;
+}
+
+/* Selector de hermano general */
+
+h1 ~ h4 {
+	color: green;
+}
+
+/* Selector descendente */
+
+p span {
+	color: rgb(132, 31, 226);
+}
+
+/* Selector de hijo directo */
+
+p > i {
+	color: sienna;
+}

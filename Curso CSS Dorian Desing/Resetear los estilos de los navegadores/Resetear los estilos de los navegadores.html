@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Resetear los estilos de los navegadores</title>
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1>Resetear los estilos de los navegadores con normalize CSS</h1>
+		<p>
+			Los navegadores por defecto, manejan una hoja de estilos
+			predeterminados, entonces, para resetear los estilos que trae por
+			defecto el navegador, vamos a usar normalize CSS.
+		</p>
+		<img src="Javascript.png" />
+		<div></div>
+		<ul>
+			<h2>Consejos</h2>
+			<li>
+				Para evitar conflictos entre normalize CSS y nuestros estilos
+				CSS, primero colocaremos el normalize y luego todos nuestros
+				estilos para evitar conflictos o que los conflictos se resuelvan
+				con cascada
+			</li>
+			<li>
+				En el archivo de Normalize CSS agregaremos una nueva regla con
+				un selector universal y la propiedad box-sizing: border-box.
+				Esta regla nos permitira que si le agregamos padding por ejemplo
+				a un div, el padding no se desborde, sino que se calcule para
+				que el div siga teniendo el mismo tamaño.
+			</li>
+		</ul>
+	</body>
+</html>

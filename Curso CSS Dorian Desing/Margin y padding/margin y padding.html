@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="margin y padding.css" />
+		<title>Margin y padding</title>
+	</head>
+	<body>
+		<h1>Margin y padding</h1>
+		<h2>Margin</h2>
+		<p>
+			El margin es la separacion de una caja con las demas cajas, este
+			margin no hace aumentar el tamaño total de la caja, ademas el margin
+			es un shorthand (es una propiedad que permite modificar varios
+			valores en una sola propiedad), ya que sin necesidad de usar las propiedades margin-top, margin-bottom, margin-left, margin-right podremos manipular los margenes de una caja,el primer valor correspondera al margen superior, el segundo valor correspondera al margen derecho, el tercero al margen inferior, el cuarto al margen izquierdo.El orden de los valores de la propiedad margin sera en sentido de las manecillas del reloj, comenzara con las margenes superior, y asi sucesivamente continuara hacia la derecha.
+			<h3>Ejemplo de como usar margin</h3>
+			<pre>
+				<code>
+					h2{
+						margin: 20px 20px 20px 20px;
+					}
+				</code>
+			</pre>
+		</p>
+		<h2>Padding</h2>
+		<p>
+			El padding es la separacion del contenido al borde en el modelo de caja, ademas el padding si aumenta el tamaño total de la caja, el padding lo podremos manejar de dos formas:
+			<ol>
+				<li>
+					usando el shorthand: si usamos el shorthand, no tendremos que usar varias lineas de codigo para modificar el padding de una caja. 
+				</li>
+				<li>
+					Usando las propiedades para cada parte de la caja: si usamos este tipo de propiedad, usaremos mas lineas de codigo, ya que para modificar cada parte de la caja, tendremos que usar una propiedad distinta (padding-top, padding-right, padding-bottom, padding-left).
+				</li>
+			</ol>
+			Si elegimos usar el shorthand, este aceptara cuatro valores los cuales representaran cada lado de la caja, el primero valor modificara la parte de arriba de la caja, el segundo valor modificara la parte derecha de la caja, el tercer valor modificara el valor de abajo de la caja, el cuarto valor modificara la parte izquierda de la caja.Tendremos que acordarnos, que el orden de los valores comenzara por la parte superior de la caja, luego ira avanzando hacia la derecha o en sentido de las manecillas del reloj.
+			<h3>Ejemplo usando el shorthand</h3>
+			<pre>
+				<code>
+					h2{
+						padding: 20px 20px 20px 20px;
+					}
+				</code>
+			</pre>
+		</p>
+
+		<h2>Practica usando las dos propiedades en una caja</h2>
+		<div class = "main-container">
+			<div class = "main-container__subcontainer"></div>
+			<div class = "main-container__subcontainer"></div>
+			<div class = "main-container__subcontainer"></div>
+			<div class = "main-container__subcontainer"></div>
+		</div>
+	</body>
+</html>

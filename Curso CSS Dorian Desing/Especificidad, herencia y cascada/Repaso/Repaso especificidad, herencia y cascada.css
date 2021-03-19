@@ -1,0 +1,42 @@
+/* ===========> Especificidad <==========*/
+/* Regla #1 */
+
+#Especificidad #Regla-1 a {
+	color: red;
+}
+
+/* Regla #2 */
+
+.Especificidad .Regla-2 a {
+	color: blue;
+}
+/* ===========> Herencia <=============*/
+.Ejemplo-herencia {
+	color: green;
+}
+.Ejemplo-herencia p {
+	color: blue;
+}
+.Ejemplo-herencia p {
+	color: unset;
+}
+.Herencia {
+	color: red;
+}
+.Herencia {
+	color: unset;
+}
+/* ===========> Cascada <==============*/
+
+span {
+	color: blue;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span {
+	color: blueviolet;
+}
+
+span {
+	color: rgb(195, 80, 80);
+	font-size: 20px;
+}

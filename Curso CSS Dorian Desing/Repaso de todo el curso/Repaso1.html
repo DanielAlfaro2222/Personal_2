@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="Repaso1.css" />
+		<link
+			rel="stylesheet"
+			href="normalize.css"
+		/>
+        <link rel="stylesheet" href="Repaso1.css">
+		<title>Repaso curso CSS</title>
+	</head>
+	<body>
+		<h1>Repaso Curso CSS</h1>
+        <h2>Como insertar CSS en HTML</h2>
+        <p>
+            En HTML5 podremos insertar CSS, de diferentes maneras.
+
+            <ul>
+                <li>
+                    <span>En linea:</span> Se usa dentro de la misma etiqueta HTML5, usando el atributo style, esto solo se usa cuando hay cambios en vivo desde javascript, del resto no se recomienda usar para nada.
+                </li>
+                <li>
+                    <span>Usando la etiqueta style:</span>
+                    En el head de nuestro HTML5, esta manera solo se utiliza cuando tenemos una sola pagina o para practicar, pero no es recomendable cuando tenemos varias paginas que comparten estilos, ya que nos tocaria tener lo mismos en todas las paginas.
+                </li>
+                <li>
+                    <span>Insertar un archivo externo:</span> En el head de nuestro HTML5, usando la etiqueta link, y el atributo href pondremos la direccion o la ubicacion del archivo, de esta manera es la mas recomendable de usar.
+                </li>
+                <li>
+                    <span>A traves de @import:</span> En el head de nuestro HTML, en la etiqueta style, usaremos el @import para importar nuestros archivos de CSS, pero no es recomendable de usar ya que si llegase a fallar, el resto de la pagina no cargara.
+                </li>
+            </ul>
+        </p>
+
+        <h2>Composicion de CSS</h2>
+        <ul>
+            <li>
+                <span>Regla:</span> Es todo el bloque de codigo, maneja su selector y las propiedades que manejen.
+            </li>
+            <li>
+                <span>Selector:</span> Es el nombre de la etiqueta HTML, a la cual le vamos a aplicar el estilo.
+            </li>
+            <li>
+                <span>Propiedad:</span> Es la funcion o el nombre del estilo que vamos a aplicar, maneja nombre de la propiedad y un valor, cada propiedad se separa con punto y coma para indicar donde termina una propiedad y donde empieza otra.
+            </li>
+            <h3>Ejemplo de una regla en CSS3</h3>
+            <pre>
+                <code>
+                    Selector{
+                        propiedad: valor;
+                    }
+                </code>
+            </pre>
+        </ul>
+
+        <h2>Metodologia BEM</h2>
+        <p>
+            La metodologia BEM es una forma de nombrar las clases en HTML, para tener una mejor forma de estructurar el codigo CSS3 para asi poder reutilizarlo, usar la menor cantidad posible de lineas de codigo y poder arreglar errores de una mejor manera.
+            <h3>Definicion de las siglas</h3>
+            <ul>
+                <li>
+                    <span>Block:</span> Es nombre de la etiqueta que empieza el bloque, por ejemplo si tenemos un div con varios parrafos dentro, la etiqueta de bloque seria el div.Para nombrarla tendremos dos opciones, primera si el bloque principal, le pondremos main-container, o solo container, ambas opciones son validas. 
+
+                </li>
+                <li>
+                    <span>Element:</span> Es un elemento que pertenece a un bloque. Para nombrar un elemento de bloque, lo que haremos es primero poner el nombre del bloque al que pertenece, luego dos rayas al piso y el nombre del elemento. 
+
+                </li>
+                <li>
+                    <span> Modifier:</span> Es un modificador de un elemento, se usa para cuando tenemos dos elementos en nuestra web iguales y queremos modificarle los estilos a uno de los dos elementos, con esto logramos que no tengamos que estar repitiendo codigo innecesario, solo agregarle una nueva clase al elemento y en CSS usar esa clase para modificarle los estilos.Para nombrar la clase con el modifier primero ponemos el bloque al que pertenece la etiqueta y luego dos guiones y el nombre de la modificacion.
+                    <h3>Ejemplo</h3>
+                    <pre>
+                        <code>
+                            -------------------HTML5--------------------
+                            &lt;div class = "main-container"&gt;
+                                &lt;a class = "main-container__link" href = "#"&gt;
+                                    Enlace 1
+                                &lt;/a&gt;
+                                &lt;a class = "main-container__link main-container--letter" href = "#"&gt;
+                                    Enlace 2
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+
+                            -------------------CSS3--------------------
+                            .main-container__link{
+                                color: red;
+                                text-decoration: none;
+                                font-size: 20px;
+                                font-family: cursive;
+                            }
+
+                            .main-container--letter{
+                                letter-spacing: 5px;
+                                padding: 5px;
+                                background-color: blue;
+                            }
+
+                        </code>
+                    </pre>
+                </li>
+            </ul>
+        </p>
+
+        <h2>Resetear los estilos de los navegadores</h2>
+        <p>
+            Los navegadores por defecto ya traen una hoja de estilos incorporada, para lo cual nosotros tendremos que resetear los estilos que el navegador o los navegadores ya traen por defecto, para eso usaremos normalize.CSS el cual es una hoja de estilos para poder resetear los estilos por defecto de los navegadores, la recomendacion es que en la parte del head de nuestro sitio web, debemos insertar primero el normalize y luego nuestros estilos, para que no existan conflictos entre ambos estilos.
+            <h3>Ejemplo de como se deberian insertar los estilos</h3>
+            <pre>
+                <code>
+                    &lt;head&gt;
+                        &lt;link href = "normalize.css" rel = "stylesheet"&gt;
+                        &lt;link href = "styles.css" rel = "stylesheet"&gt;
+                    &lt;/head&gt;
+                </code>
+            </pre>
+        </p>
+
+        <h2>Prefijos</h2>
+        <p>
+            En CSS los prefijos son unos complementos de los provedores o desarrolladores a las propiedades para que sean compatibles con el navegador, no todas las etiquetas manejan prefijos, pero si las que estan en fase experimental.
+            <h3>Ejemplo de una etiqueta con prefijos</h3>
+            <pre>
+                <code>
+                    body {
+                        -webkit-appearance: initial;
+                           -moz-appearance: initial;
+                                appearance: initial;
+                    }
+                </code>
+            </pre>
+        </p>
+
+        <h2>Especificidad, Herencia y Cascada</h2>
+        <p>
+            Estos tres temas son importantes conocerlos, ya que cuando se presenten conflictos entre los estilos, usaremos alguna de estas tres formas para resolverlos.
+
+            <h3>Especificidad</h3>
+            <p>
+                La especificidad es el valor que tiene el selector de la regla, si un elemento tiene dos o mas reglas, en las cuales hay propiedades que tienen conflictos, el navegador va a aplicar las propiedades que tengan un selector con mas especificidad, mas no va a sobreescribir toda la regla, solo va a sobreescribir las propiedades en conflicto.
+                <h4>Orden de especificidad</h4>
+                <ol>
+                    <li>Etiqueta----------------------0,0,0,1</li>
+                    <li>clases y pseudoclases---------0,0,1,0</li>
+                    <li>ID----------------------------0,1,0,0</li>
+                    <li>Estilo en linea---------------1,0,0,0</li>
+                    <li>Important---------------------Le gana a cualquiera(no usarlo)</li>
+                </ol>
+                <h4>Ejemplo de Especificidad</h4>
+                <pre>
+                    <code>
+                        -------------------HTML5--------------------
+                        &lt;a href="#" class = "link" id = "link"&gt;Enlace&lt;/a&gt;
+
+                        -------------------CSS3---------------------
+                        #link {
+                            color: red; // Se aplicara esta propiedad ya que tiene mas especificidad, tambien se aplicaran el resto de propiedades ya que no estan entrado en conflicto.
+                            text-decoration: none;
+                        }
+                        .link {
+                            font-size: 70px;
+                            color: blue;
+                            font-family: cursive;
+                        }
+                    </code>
+                </pre>
+            </p>
+
+            <h3>Herencia</h3>
+            <p class = "paragraph">
+                La herencia es como su mismo nombre lo dice, la herencia de algunos estilos del elemento padre al elemento hijo, por ejemplo si dentro de un parrafo tenemos un texto enfatizado, y al parrrafo le aplicamos un color, el texto enfatizado lo heredara. Hay casos en los que las propiedades no se heredan, por ejemplo en los enlaces, estos no heredan estilos. Tenemos tres valores de propiedades initial(no fuerza la herencia, sino que mas bien se toma el valor por defecto del elemento), inherit(Fuerza la herencia, lo que hace que tome el valor del elemento padre), unset(Este valor basicamente puede hacer dos cosas, dependiendo de como este ubicadas las etiquetas si esta dentro de otra etiqueta lo que va a hacer es reestablecer la propiedad a la que heredo y no a los valores iniciales, y si esta fuera de una etiqueta lo que va a hacer es reestablecer la propiedad a los valores iniciales).
+                <h3>Ejemplo de herencia</h3>
+                <pre>
+                    <code>
+                        -------------------HTML5--------------------
+                        &lt;p class = "paragraph"&gt;
+                            Lorem, ipsum dolor sit adipisicing elit. Saepe porro &lt;em&gt;cupiditate illum&lt;/em&gt; harum tempore. 
+                        &lt;/p&gt;
+
+                        -------------------CSS3---------------------
+                        .paragraph{
+                            color: green;
+                        }
+                    </code>
+                </pre>
+            </p>
+            
+            <h3>Cascada</h3>
+            <p>
+                La cascada es cuando un elemento(selector, clase o id), tiene mas de una regla de estilo para aplicar, lo que hace el navegador es aplicar la ultima regla que tenga ese elemento, sin embargo, no se reescribe toda la regla, mas bien se reescribe las propiedades que entran en conflicto.A esto se le llama cascada.
+                <h4>Ejemplo de cascada</h4>
+                <pre>
+                    <code>
+                        -------------------HTML5--------------------
+                        &lt;a href = "#" class = "main-link"&gt;Enlace&lt;/a&gt;
+                        
+                        -------------------CSS3---------------------
+                        .main-link{
+                            color: blue;
+                           font-size: 20px;
+                           font-family: verdana;
+                        }
+                        .main-link{
+                            color: white;
+                        }
+                        .main-link{
+                            color: red; //Por cascada se va a aplicar esta propiedad y el resto de colores los va a ignorar.
+                        }
+                    </code>
+                </pre>
+            </p>
+            
+            
+            <h3>Orden en como se resuelven los conflictos en CSS3</h3>
+            <ol>
+                <li>Important</li>
+                <li>Especificidad</li>
+                <li>Cascada</li>
+            </ol>
+        </p>
+        
+        <h2>Tipos de selectores</h2>
+        <p>
+            En CSS existen diferentes selectores.
+            <ol>
+                <li>
+                    Selector de etiqueta: Este es el selector mas basico, es cuando usamos el nombre de la etiqueta a la cual queremos afectar, no es recomendable usar ya que afecta de manera global a la misma etiqueta en toda la pagina.
+                    <h3>Ejemplo de selector de etiqueta</h3>
+                    <pre>
+                        <code>
+                            h2{
+                                color: red;
+                                font-size: 20px;
+                                padding: 5px;
+                            }
+                        </code>
+                    </pre>
+                </li>
+                
+                <li>
+                    Selector de id: Este tipo de selector no es recomendable usarlo para darle estilos a una etiqueta, se recomienda usar para identificar una etiqueta en javascript para darle alguna funcionalidad, al ser un identificador, este no se puede repetir, debe ser unico.
+                    <h3>Ejemplo selector de id</h3>
+                    <pre>
+                        <code>
+                            #parrafo{
+                                color: blue;
+                                font-family: verdana;
+                                padding: 5px;
+                            }
+                        </code>
+                    </pre>
+                </li>
+
+                <li>
+                    Selector de clase: Este tipo de selector es el mas usado y el mas recomendado para darle estilos a una etiqueta en CSS, en este tipo de selector no hay problema si se repite, lo podremos usar cuantas veces queramos, dentro de la etiqueta HTML usaremos el atributo class y le daremos un valor, este valor luego lo llamaremos en CSS de la siguiente forma:
+                    <h3>Ejemplo de selector de clase</h3>
+                    <pre>
+                        <code>
+                            .main-menu{
+                                background-color: blue;
+                                color: white;
+                                font-size: 20px;
+                            }
+                        </code>
+                    </pre>
+                </li>
+
+                <li>
+                    Selector de atributo:
+                    <ul>
+                        <li>
+                            Selector de atributo
+                            <h3>Ejemplo de selector de atributo</h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;a href = "#"&gt;Enlace&lt;/a&gt;
+
+                                    -------------------CSS3---------------------
+                                    [href]{
+                                        color: red;
+                                    }
+                                </code>
+                            </pre>
+
+                        </li>
+                        <li>
+                            Selector de atributo y valor
+                            <h3>Ejemplo de selector de atributo y valor</h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;a href = "#"&gt;Enlace&lt;/a&gt;
+
+                                    -------------------CSS3---------------------
+                                    [href = "#"]{
+                                        color: red;
+                                    }
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            Selector de atributo y valor por lo menos una vez
+                            <h3>Ejemplo de selector de atributo y valor por lo menos una vez</h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;a class = "uno-dos"&gt;Enlace&lt;/a&gt;
+
+                                    -------------------CSS3---------------------
+                                    [class ⁓= "dos"]{
+                                        color: red;
+                                    }
+                                </code>
+                            </pre>
+
+                        </li>
+                        <li>
+                            Selector que tengan exactamente ese atributo y ese valor o que por lo menos empiece por ese valor separado por un guion
+                            <h3>
+                                Ejemplo de selector que tenga exactamente ese atributo y ese valor
+                            </h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;a class = "dos"&gt;Enlace&lt;/a&gt;
+
+                                    -------------------CSS3---------------------
+                                    [class |= "dos"]{
+                                        color: red;
+                                    }
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            Selector que tenga ese atributo y empiecen por ese valor
+                            <h3>
+                                Ejemplo de selector que tenga ese atributo y empiece por ese valor
+                            </h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;a class = "uno-dos"&gt;Enlace&lt;/a&gt;
+
+                                    -------------------CSS3---------------------
+                                    [class ^= "uno"]{
+                                        color: red;
+                                    }
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            Selector que tenga ese atributo y termine por ese valor
+                            <h3>
+                                Ejemplo de selector que tenga ese atributo y termine por ese valor
+                            </h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;a class = "uno-dos"&gt;Enlace&lt;/a&gt;
+
+                                    -------------------CSS3---------------------
+                                    [class $= "dos"]{
+                                        color: red;
+                                    }
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            Selecto que tenga ese atribut y ese valor sin importar la posicion
+                            <h3>
+                                Ejemplo de selector que tenga ese atributo y ese valor sin importar la posicion
+                            </h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;a href = "#"&gt;Enlace&lt;/a&gt;
+
+                                    -------------------CSS3---------------------
+                                    [href *= "#"]{
+                                        color: red;
+                                    }
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    Selectores combinadores:
+                    <ul>
+                        <li>
+                            Selector de hermano adyacente: Esto lo que va a hacer es aplicar estilos al elemento que este justo debajo de el.
+                            <h3>Ejemplo selector de hermano adyacente</h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;h1&gt;Titulo&lt;/h1&gt;
+                                    &lt;h2&gt;Subtitulo&lt;/h2&gt;
+
+                                    -------------------CSS3---------------------
+                                    h1 + h2{
+                                        color: blue; //se va a aplicar esta propiedad a la etiqueta h2
+                                    }
+                                </code>
+                            </pre>
+
+                        </li>
+                        <li>
+                            Selector de hermano general: Esto lo que va a hacer es aplicar estilos a todas las etiquetas que esten debajo de la etiqueta padre, esto se hace de arriba hacia abajo, si queremos realizarlo al reves tendremos que usar javascript.
+                            <h3>Ejemplo selector de hermano general</h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;h1&gt;Titulo padre&lt;/h1&gt;
+                                    &lt;h2&gt;Sutitulo hijo&lt;/h2&gt;
+                                    &lt;h2&gt;Sutitulo hijo&lt;/h2&gt;
+
+                                    -------------------CSS3---------------------
+                                    h1 ~ h2{
+                                        color: red;
+                                    }
+                                </code>
+                            </pre>
+                        </li>
+                        <li>
+                            Selector de hijo directo: Esto lo que va a realizar es aplicar estilo a una etiqueta que esta debajo de una etiqueta especifica y no de otra.
+                            <h3>Ejemplo selector de hijo directo</h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;h1&gt;Titulo padre&lt;/h1&gt;
+                                    &lt;p&gt;Parrafo&lt;/p&gt;
+
+                                    -------------------CSS3---------------------
+                                    h1 > p{
+                                        color: red;
+                                    }
+                                </code>
+                            </pre>
+
+                        </li>
+                        <li>
+                            Selector de hijo descendente: Esto lo que va a indicar es que se le aplicara los estilos a una etiqueta que esta dentro de otra, solo se aplicara los estilos si se cumple esta condicion.
+                            <h3>Ejemplo de hijo descendiente</h3>
+                            <pre>
+                                <code>
+                                    -------------------HTML5--------------------
+                                    &lt;div&gt;
+                                        Contenedor
+                                        &lt;h2&gt;Sutitulo hijo&lt;/h2&gt;
+                                        &lt;h2&gt;Sutitulo hijo&lt;/h2&gt;
+                                    &lt;/div&gt;
+
+                                    -------------------CSS3---------------------
+                                    div h2{
+                                        color: red;
+                                    }
+                                </code>
+                            </pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    Selector universal: Este tipo de selector se usa para aplicar estilos a todo el documento HTML, no es muy recomendable usar este tipo de selector.
+                    <h3>Ejemplo de selector universal</h3>
+                    <pre>
+                        <code>
+                            *{
+                                color: red;
+                                letter-spacing: 5px;
+                            }
+                        </code>
+                    </pre>
+                </li>
+            </ol>
+        </p>
+	</body>
+</html>

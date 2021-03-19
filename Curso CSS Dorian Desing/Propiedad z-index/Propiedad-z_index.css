@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+.padre {
+	width: 200px;
+	height: 200px;
+	background-color: lightblue;
+	border: 1px solid black;
+	position: relative;
+	top: 20px;
+}
+.hijo {
+	width: 100px;
+	height: 100px;
+	background-color: lightcoral;
+	position: relative;
+	border: 1px solid black;
+	z-index: -1;
+	top: -40px;
+	left: 130px;
+}
+
+[class*='box'] {
+	width: 120px;
+	height: 120px;
+	border: 1px solid black;
+	position: relative;
+	font-size: 50px;
+	text-align: center;
+	padding: 30px;
+}
+.box1 {
+	margin: 20px 0 0 0;
+	background-color: lightseagreen;
+	z-index: 30;
+}
+.box2 {
+	background-color: magenta;
+	top: -60px;
+	left: 60px;
+	z-index: 20;
+}
+.box3 {
+	background-color: yellow;
+	top: -120px;
+	left: 120px;
+	z-index: 10;
+}
+.box4 {
+	background-color: goldenrod;
+	top: -270px;
+	left: 160px;
+	z-index: 15;
+}

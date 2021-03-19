@@ -1,0 +1,14 @@
+.Parrafo-ejemplo {
+	color: red;
+}
+a {
+	color: inherit;
+}
+
+p {
+	color: red;
+}
+
+p {
+	color: blue !important;
+}

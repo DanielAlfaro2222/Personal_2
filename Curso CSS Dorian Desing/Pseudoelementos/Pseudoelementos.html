@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pseudoelementos</title>
+		<style>
+			.primera-linea::first-line {
+				color: red;
+			}
+			.primera-letra::first-letter {
+				color: red;
+				font-size: 3em;
+			}
+			.seleccion::selection {
+				background-color: red;
+				color: white;
+			}
+			.antes-despues::before {
+				content: '$';
+				font-size: 1em;
+				color: lightcoral;
+			}
+			.antes-despues::after {
+				content: '.00';
+				color: lime;
+			}
+			.selector::pseudoelemento{
+				propiedad: valor;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Pseudoelementos</h1>
+		<p>
+			Los pseudoelementos se usan para aplicar estilos a partes
+			especificas de los elementos.
+		</p>
+		<h2>Tipos de pseudoelementos mas utilizados</h2>
+		<ul>
+			<li>
+				::before => Se usa para aplicar o dibujar cosas antes del
+				elemento, ademas este pseudoelemento, es dibujado de manera
+				virtual, si intentamos seleccionar el elemento con el mouse, no
+				nos dejara seleccionarlo.Ademas este pseudoelemento para
+				funcionar debe tener la propiedad contenent, no importa si esta
+				vacia, sin esa propiedad el before no funcionara, el contenent
+				se usa para insertar letras o simbolos.
+			</li>
+			<li>
+				::after => Se usa para aplicar o dibujar cosas despues del
+				elemento, ademas este pseudoelemento, es dibujado de manera
+				virtual, si intentamos seleccionar el elemento con el mouse, no
+				nos dejara seleccionarlo.Ademas este pseudoelemento para
+				funcionar debe tener la propiedad contenent, no importa si esta
+				vacia, sin esa propiedad el after no funcionara, el contenent se
+				usa para insertar letras o simbolos.
+			</li>
+			<li>
+				::first-letter => Se usa para aplicar estilos a la primera letra
+				de una palabra, solo funciona en elementos en bloque.
+			</li>
+			<li>
+				::first-line => Se usa para aplicar estilos a la primera linea
+				de un texto, esto funciona dinamicamente, si la pantalla es muy
+				larga o pequeña se va a seguir aplicando estos estilos a la
+				primera linea del texto, solo funciona en elementos en bloque.
+			</li>
+			<li>
+				::selection => Se usa para aplicar estilos a la parte donde el
+				usuario selecciona un texto con el mouse, este pseudoelementos
+				actualemente esta en obsoleto o no se usa con frecuencia.
+			</li>
+		</ul>
+
+		<h2>Ejemplo de ::first-line</h2>
+		<p class="primera-linea">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta est
+			tempora, similique quo quas sequi officia aliquid necessitatibus
+			repudiandae, vel nihil pariatur at dolor, explicabo quos?
+			Repellendus quae saepe provident. Lorem ipsum dolor sit amet,
+			consectetur adipisicing elit. Corrupti earum ratione, officiis nam
+			aliquid expedita temporibus! Neque voluptate, fugit quos nihil rerum
+			quam officiis qui, atque, quo molestias nostrum voluptatum?
+		</p>
+		<h2>Ejemplo de ::first-letter</h2>
+		<p class="primera-letra">
+			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+			fugiat quos temporibus eum iste quasi, quaerat soluta. Dolores
+			consectetur cupiditate ad atque maxime, labore eveniet fugiat,
+			quisquam delectus placeat ipsam! Lorem ipsum, dolor sit amet
+			consectetur adipisicing elit. Aperiam quia dolorem omnis vero nisi
+			similique esse ipsam temporibus labore laudantium alias, impedit
+			sint incidunt deserunt fuga quod minima, eum quis!
+		</p>
+		<h2>Ejemplo de ::selection</h2>
+		<p class="seleccion">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+			delectus eos eum laboriosam sint tenetur culpa distinctio obcaecati
+			natus magni suscipit laborum enim quasi quod libero assumenda,
+			ducimus aliquam atque! Lorem ipsum dolor sit amet consectetur
+			adipisicing elit. Cum, quasi accusantium. Aspernatur quis quam minus
+			cumque. Fugit dolore nobis alias facere, tempora earum amet
+			voluptatibus labore, eveniet saepe ad suscipit?
+		</p>
+		<h2>Ejemplo de ::after y ::before</h2>
+		<span class="antes-despues">5</span>
+	</body>
+</html>

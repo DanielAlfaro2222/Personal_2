@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Repaso de especificidad, herencia y cascada</title>
+		<link rel="stylesheet" href="Repaso especificidad, herencia y cascada.css">
+	</head>
+	<body>
+		<h1>Repaso sobre especificidad, herencia y cascada</h1>
+		<h2>Especificidad</h2>
+		<p>
+			La especificidad es el valor que tiene cada regla CSS, de esta
+			manera si un elemento en html maneja dos o mas reglas CSS, el
+			navegador escojera la que mayor especificidad(mayor peso) tenga, si
+			la especificidad es igual entre todas las reglas que tienen un mismo
+			elemento, el navegador ya no escoge por especificidad si no por
+			cascada, aplicando la ultima regla e ignorando las demas. Ademas, es importante acotar que cuando surgen conflictos en CSS, no se va a sobreescribir toda la regla, solo se van a sobreescribir las propiedades que entren en conflicto.
+			<h3>Ejemplo</h3>
+			<div id = "Especificidad" class = "Especificidad">
+				<div id = "Regla-1" class = "Regla-2">
+					<a href="#">Ejemplo de especificidad si se marca rojo es que gano la regla 1 y si se marca azul significa que gano la regla 2 </a>
+				</div>
+			</div>
+		</p>
+
+		<h2>Herencia</h2>
+		<p>
+			La herencia es cuando el elemento hijo por asi decirlo, hereda los estilos del elemento padre, para esto tenemos tres valores de propiedades, los cuales son inherit(Fuerza la herencia), initial(Toma el valor por defecto del elemento padre), unset (si el elemento esta dentro de otra etiqueta, va a restablecer el valor de la propiedad o propiedades heredadas a los valores de la etiqueta padre ver EJEMPLO, y si no esta dentro de una etiqueta el unset va a restablecer la propiedad o las propiedades a su valor inicial o por defecto)
+			<h3>Ejemplo de herencia usando inherit en un enlace</h3>
+			<div class = "Ejemplo-herencia">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est odit aliquam accusamus doloremque dolores mollitia perspiciatis! Sit quod eligendi qui libero 
+				<p>EJEMPLO</p> 
+			</div>
+			<a href="#" class = "Herencia">EJEMPLO 2</a>
+		</p>
+
+		<h2>Cascada</h2>
+		<p>
+			La cascada es cuando un mismo elemento tiene mas de una regla por aplicar, el navegador resuelve el conflicto en cascada, cuando las reglas que se le pueden aplicar a un mismo elemento tienen el mismo valor de especificidad, ahi es cuando entra la cascada, para resolver el conflicto lo que va a hacer el navegador es aplicar la ultima regla de estilos e ignorar las demas.Ademas, es importante acotar que cuando surgen conflictos en CSS, no se va a sobreescribir toda la regla, solo se van a sobreescribir las propiedades que entren en conflicto.
+			<h3>Ejemplo de cascada</h3>
+			<span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate fuga dolor ab odit nesciunt sapiente atque debitis officiis nobis facere similique laboriosam maiores magni, autem earum quod perspiciatis aspernatur quisquam?</span>
+		</p>
+
+		<h3>Orden en que se resuelven los conflictos en CSS</h3>
+		<ol>
+			<li>Important</li>
+			<li>Especificidad</li>
+			<li>Cascada</li>
+		</ol>
+	</body>
+</html>

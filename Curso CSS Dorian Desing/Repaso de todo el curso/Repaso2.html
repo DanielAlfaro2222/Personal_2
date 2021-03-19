@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="Repaso2.css" />
+		<title>Repaso de todo el curso hasta el capitulo 4</title>
+	</head>
+	<body>
+		<h1>Repaso de todo el curso hasta el capitulo 4</h1>
+		<h2>Formas de insertar estilos en HTML5</h2>
+		<ul>
+			<li>
+				Usando la etiqueta style en el head de nuestra pagina: Esta
+				forma se recomienda solamente si es una sola pagina, ya que si
+				tenemos varias paginas, lo recomendables es que la estructura y
+				los estilos de las paginas esten separados.
+			</li>
+			<li>
+				Usando estilos en linea usando el atributo style: Esta forma se
+				recomienda usar si y solamente si cuando tengamos que editar los
+				estilos en tiempo real con javascript, del resto no se
+				recomienda usar.
+			</li>
+			<li>
+				Usando clases: Esta es la forma mas recomendable para darle
+				estilos a nuestro HTML5.
+			</li>
+			<li>
+				Usando @import: Esta forma ni por el putas hay que usarla, ya
+				que si llegase a fallar, el resto de los estilos no cargaran.
+			</li>
+		</ul>
+		<h2>Tipos de selectores</h2>
+		<ul>
+			<li>Selector de etiqueta</li>
+			<li>Selector de atributo</li>
+			<li>Selectores combinadores</li>
+			<ul>
+				<li>Selector de hermano adyacente</li>
+				<li>Selector de hermano general</li>
+			</ul>
+			<li>Selector clase => Este es el mas recomendado de usar</li>
+			<li>Selector de id</li>
+			<li>Selector universal</li>
+		</ul>
+		<h2>Especificidad, herencia y cascada</h2>
+		<h3>Especificidad</h3>
+		<p>
+			La especificidad es el peso o valor que tiene un selector, si
+			tenemos un conflicto entre dos reglas que se deberian aplicar a un
+			mismo elemento, ganara la que mas especificidad(valor) tenga.
+			<h4>Valores de especificidad</h4>
+			<ol>
+				<li>Selector de etiqueta........1</li>
+				<li>Selector de clase...........10</li>
+				<li>Selector de id..............100</li>
+				<li>Estilo en linea.............1000</li>
+				<li>!important..................le gana a todo</li>
+			</ol>
+		</p>
+		<h3>Herencia</h3>
+		<p>
+			La herencia es cuando un elemento hijo hereda estilos de un elemento padre, solo hereda algunos estilos, existe tres valores el primero es el inherit(este fuerza la herencia), initial(este va a tomar el color por defecto que trae el elemento, no lo estilos del padre) y unset(este puede hacer dos cosas, todo depende de la ubicacion, si esta dentro de un elemento va a heredar los estilos del elemento padre y si esta por fuera, va a tomar los estilos por defecto del propio elemento).
+			<h4>Ejemplo de inherit, initial y unset</h4>
+			<div>
+				<p class = "Ejemplo-herencia">
+					Lorem ipsum dolor sit <span>INITIAL</span> amet consectetur adipisicing elit. Itaque hic vero corporis facilis suscipit, debitis ipsam praesentium fuga nulla quos deserunt vitae culpa dolor quaerat <a href = "#">INHERIT</a> Libero. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio libero voluptates veniam fugiat vel, animi debitis blanditiis ratione tempora inventore hic error temporibus maxime at. Aspernatur quis praesentium incidunt quas.
+				</p>
+				<a href="#">UNSET</a>
+			</div>
+		</p>
+		<h3 class = "titulo-Parrafo">Cascada</h3>
+		<p>
+			La cascada es cuando existen conflictos entre dos o mas reglas, y ambas tienen la misma especificidad, entonces para resolver este conflicto, el navegador lo que va a hacer es usar la cascada, la cual significa que va a aplicar la ultima regla que 
+		</p>
+
+		<h2>Metodologia BEM</h2>
+		<p>
+			La metodologia BEM es una forma de nombrar las clases en HTML5 para estructurar de una manera eficiente el codigo en CSS. las siglas de BEM significan B(block), E(element), M(modifier).
+			<h3>Como se nombran las clases</h3>
+			<ul>
+				<li>
+					Bloques => Los bloques se nombran con una palabra, dos palabras o mas separadas por un guion. Ejemplo class = "main-menu"
+				</li>
+				<li>
+					Elementos => Los elementos se nombran primero se pone el bloque al que pertenecen, luego dos rayas al piso y el nombre del elemento.Por ejemplo class = "main-menu__img"
+				</li>
+				<li>
+					Modifier => Las modificaciones se nombran primero el bloque al que pertecen, luego, dos rayas el nombre del elemento, y luego dos guiones el nombre de la modificacion. Por ejemplo class = "main-menu__img--active"
+				</li>
+			</ul> 
+		</p>
+
+		<h2>Box model</h2>
+		<p>
+			En CSS3 cada elemento es visto como una caja, cada caja se compone de un contenido, un padding, un border y un margin (este no hace crecer el tamaño real de la caja).
+
+			<ul>
+				<li>Content: Es el contenido principal de la caja.</li>
+				<li>
+					Padding: Es la separacion del contenido y el border en la caja, esta propiedad hace crecer el tamaño real de la caja.
+				</li>
+				<li>
+					Border: Es la separacion entre padding y el margin, esta propiedad hace crecer el tamaño real de la caja.
+				</li>
+				<li>
+					Margin: Es la separacion entre una caja, con las demas cajas, esta propiedad no hace crecer el tamaño real de la caja.
+				</li>
+				<li>
+					Outline: Se usa para ver la ubicacion de una caja, no hace parte del box model, ademas que no modifica el tamaño real de la caja.
+
+				</li>
+			</ul>
+		</p>
+
+		<h2>Propiedades margin y padding</h2>
+		<h3>Margin</h3>
+		<p>
+			El margin es la sepacion de una caja, con las otras cajas a su alrededor.Ademas, el margin es una propiedad shorthand, ya que con solo esta propiedad podremos modificar varias cosas, sin necesidad de usar las propiedades margin-top, margin-bottom, margin-left, margin-right, usando la propiedad margin podremos modificar estas cuatro propiedades, el primer valor correspondera al margin-top, y los siguientes valores corresponderan deacuerdo a las manecillas del rejo, osea el primer valor corresponde al margin top, el segundo valor corresponde al margin right, el tercer valor corresponde al margin bottom y el cuarto valor corresponde al margin left.
+
+			<h4>Por ejemplo</h4>
+			margin: 10px(margin-top) 5px(margin-right) 2px(margin-bottom) 3px(margin-left);
+		</p>
+		<h3>Padding</h3>
+		<p>
+			El padding es la separacion del contenido con el borde de la caja, esta propiedad tambien es un shorthand, ya que con esa sola propiedad podremos modificar los cuatro lados de la caja, el primer valor correspondera al padding superior, el segundo valor correspondera al padding derecho, el tercer valor correspondera al padding inferior, el cuarto valor correspondera al padding izquierdo.
+			<h4>Ejemplo</h4>
+			padding: 1em(padding-top) 2em(padding-right) 3em(padding-bottom) 4em(padding-left);
+		</p>
+	</body>
+</html>

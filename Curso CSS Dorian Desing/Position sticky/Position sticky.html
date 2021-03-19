@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="Position sticky.css" />
+		<title>Position sticky</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<h1 class="main-header__title"> Logo</h1>
+		</header>
+
+		<nav class="main-menu">
+			<ul class="list-menu">
+				<li class="list-menu__item">
+					<a href="#" class="list-menu__link">Inicio</a>
+				</li>
+				<li class="list-menu__item">
+					<a href="#" class="list-menu__link">Blog</a>
+				</li>
+				<li class="list-menu__item">
+					<a href="#" class="list-menu__link">Proyectos</a>
+				</li>
+				<li class="list-menu__item">
+					<a href="#" class="list-menu__link">Trabajos</a>
+				</li>
+				<li class="list-menu__item">
+					<a href="#" class="list-menu__link">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main class="main-content">
+			<h2>Position sticky</h2>
+			<p class="main-content__paragraph">
+				El position sticky, es una combinacion entre position relative y
+				position fixed, este tipo de position, si respeta el espacio que
+				ocupa el elemento en el flujo del HTML, ademas para que funcione
+				bien el sticky, al elemento que le vamos a aplicar, el position,
+				tiene que estar por fuera de un contenedor, si esta adentro, el
+				elemento se quedara pegado hasta el final del tamaño del
+				contenedor y no del tamaño final de la pagina.
+			</p>
+			<p class="main-content__paragraph">
+				Si el elemento con position sticky, no tiene un tamaño o dimension declarado, su tamaño dependera del tamaño de su contenido.
+			</p>
+			<p class="main-content__paragraph">
+				Este tipo de position se usa principalmente para crear un menu o un pie de pagina, que sin importar el scroll que se haga, el elemento siempre va a conservar su posicion.
+			</p>
+			<p class="main-content__paragraph">
+				Este tipo de position primero funcionara como un postion relative, y luego de que se alcance el tope declarado, funcionara como un postion fixed.
+			</p>
+			<h2>Propiedades de position sticky</h2>
+			<p class="main-content__paragraph">
+				El position sticky, acepta cuatro propiedades, las cuales son
+				top, left, right, bottom, de estas cuatro propiedades, las que
+				mas peso tienen son el top y el left.
+				<ul>
+					<li>
+						<span>top</span> => Se usa para mover el elemento hacia arriba.
+					</li>
+					<li>
+						<span>left</span> => Se usa para mover el elemento hacia el lado izquierdo.
+					</li>
+					<li>
+						<span>right</span> => Se usa para mover el elemento hacia el lado derecho.
+					</li>
+					<li>
+						<span>bottom</span> => Se usa para mover el elemento hacia abajo.
+					</li>
+				</ul>
+			</p>
+			<p class="main-content__paragraph">
+				1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+				fugit cum. Facere, itaque dignissimos ab nesciunt rerum
+				temporibus odit, explicabo, sequi quas odio eos molestiae quos!
+				Esse quam alias iusto. Lorem ipsum dolor, sit amet consectetur
+				adipisicing elit. Quam quia, incidunt explicabo pariatur
+				asperiores labore, iste vel dolorem illo suscipit repellendus
+				quasi eius cumque, totam quibusdam possimus fugiat excepturi
+				consectetur.
+			</p>
+			<p class="main-content__paragraph">
+				2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+				fugit cum. Facere, itaque dignissimos ab nesciunt rerum
+				temporibus odit, explicabo, sequi quas odio eos molestiae quos!
+				Esse quam alias iusto. Lorem ipsum dolor, sit amet consectetur
+				adipisicing elit. Eveniet provident voluptate cupiditate nostrum
+				voluptates voluptas at accusantium architecto alias temporibus,
+				error atque tenetur fugit, sunt reprehenderit dolorem
+				perferendis ipsa omnis.
+			</p>
+			<p class="main-content__paragraph">
+				3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+				fugit cum. Facere, itaque dignissimos ab nesciunt rerum
+				temporibus odit, explicabo, sequi quas odio eos molestiae quos!
+				Esse quam alias iusto. Lorem ipsum dolor sit amet consectetur
+				adipisicing elit. Rem id voluptatum autem neque, delectus a
+				eligendi animi, ducimus est odit doloribus quisquam accusantium
+				aperiam voluptas sint architecto illo quia. Iusto.
+			</p>
+			<p class="main-content__paragraph">
+				4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+				fugit cum. Facere, itaque dignissimos ab nesciunt rerum
+				temporibus odit, explicabo, sequi quas odio eos molestiae quos!
+				Esse quam alias iusto. Lorem ipsum dolor sit amet consectetur
+				adipisicing elit. Sed praesentium, architecto porro, cum
+				deleniti, dolores cupiditate sint doloremque nobis aspernatur
+				nulla exercitationem non quibusdam voluptatem consequatur
+				laboriosam quaerat nam numquam.
+			</p>
+			<p class="main-content__paragraph">
+				5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+				fugit cum. Facere, itaque dignissimos ab nesciunt rerum
+				temporibus odit, explicabo, sequi quas odio eos molestiae quos!
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
+				laboriosam. Maiores vel suscipit saepe voluptatem amet culpa
+				obcaecati, cumque vitae libero reprehenderit dicta accusamus
+				commodi quo, natus eius tempore expedita. Esse quam alias iusto.
+			</p>
+			<p class="main-content__paragraph">
+				6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+				fugit cum. Facere, itaque dignissimos ab nesciunt rerum
+				temporibus odit, explicabo, sequi quas odio eos molestiae quos!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+				pariatur amet deleniti unde nam soluta libero, dicta ad eveniet
+				atque placeat? Quibusdam nostrum in deleniti sequi soluta totam,
+				velit eveniet? Esse quam alias iusto.
+			</p>
+			<p class="main-content__paragraph">
+				7. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+				fugit cum. Facere, itaque dignissimos ab nesciunt rerum
+				temporibus odit, explicabo, sequi quas odio eos molestiae quos!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+				animi magnam, omnis culpa voluptates et quisquam rerum
+				laudantium eaque veniam recusandae, ab accusantium! Minus rerum
+				obcaecati adipisci facere magnam consequuntur! Esse quam alias
+				iusto.
+			</p>
+			<p class="main-content__paragraph">
+				8. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+				fugit cum. Facere, itaque dignissimos ab nesciunt rerum
+				temporibus odit, explicabo, sequi quas odio eos molestiae quos!
+				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+				quasi architecto deserunt neque a, minima labore nisi recusandae
+				velit quidem beatae, officiis nostrum quisquam magnam eligendi
+				placeat minus ad provident? Esse quam alias iusto.
+			</p>
+			<p class="main-content__paragraph">
+				9. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+				fugit cum. Facere, itaque dignissimos ab nesciunt rerum
+				temporibus odit, explicabo, sequi quas odio eos molestiae quos!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+				illo architecto quos, inventore voluptate qui. Iusto quibusdam,
+				illum iure ut ex dolorem, repudiandae maiores corrupti saepe,
+				exercitationem sapiente voluptas voluptatum! Esse quam alias
+				iusto.
+			</p>
+			<p class="main-content__paragraph">
+				10. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Nam, fugit cum. Facere, itaque dignissimos ab nesciunt rerum
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+				vitae repellat atque itaque, est quasi eos amet corrupti, error
+				nam tempore ipsum qui exercitationem accusantium natus et quas!
+				Doloremque, aut? temporibus odit, explicabo, sequi quas odio eos
+				molestiae quos! Esse quam alias iusto.
+			</p>
+		</main>
+
+		<footer></footer>
+	</body>
+</html>

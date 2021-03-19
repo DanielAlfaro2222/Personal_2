@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Especificidad, herencia y cascada</title>
+        <link rel="stylesheet" href="Especificidad, herencia y cascada.css">
+	</head>
+	<body>
+		<h1>Especificidad, herencia y cascada</h1>
+		<h2>¿Que es la especificidad?</h2>
+		<p>
+			La especificidad es el peso o valor de un selector, se usa resolver
+			conflictos entre selectores, si hay dos selectores que tienen los
+			mismos estilos, pues se aplicaran los del selector de mayor valor.
+            <h3>Niveles de especificidad</h3>
+            <ol>
+                <li>Etiqueta-------------------------0,0,0,1</li>
+                <li>Clases y pseudoclases------------0,0,1,0</li>
+                <li>ID-------------------------------0,1,0,0</li>
+                <li>Estilos en linea-----------------1,0,0,0</li>
+                <li>!Important-----------------------Esto le gana a todo</li>
+            </ol>
+            <h3>Ejemplo</h3>
+            <p>
+                Un claro ejemplo de especificidad es que un mismo elemento tenga dos reglas de estilos diferentes, pero en la primera regla usemos de selector la etiqueta y en el segundo de selector la etiqueta y usemos important, como important tiene mas valor de especificidad que la primera regla, pues se va a aplicar la regla con important.
+            </p>
+		</p>
+
+        <hr>
+		<h2>¿Que es la herencia?</h2>
+		<p>
+			La herencia es cuando un elemento hereda estilos de un elemento mas
+			cercano.
+            <h3>Ejemplo</h3>
+            <p class = "Parrafo-ejemplo">
+                En este ejemplo para aplicar la herencia usaremos, <a href = "#">un enlace que este dentro de la etiqueta de parrafo, para explicar mejor la herencia,</a> por ejemplo si queremos cambiar el color de la letra, solo se aplicaria a la etiqueta de parrafo y no al enlace, para que se herede el color en CSS, en el nombre de la propiedad usaremos en valor inherit, lo que va a realizar es heredad el valor de la etiqueta padre.
+            </p>
+		</p>
+
+        <hr>
+		<h2>¿Que es la cascada?</h2>
+		<p>
+			La cascada es el orden como se aplican los estilos en css, el
+			archivo de CSS se lee de arriba a abajo, si arriba ya hay unos
+			estilos definidos y los estilos de abajo entran en conflicto con los
+			de arriba, pues los estilos de arriba seran sobreescritos con los
+			estilos de abajo.
+            <h3>Ejemplo</h3>
+            <p>
+                Un ejemplo de cascada es que un mismo elemento, tenga dos reglas de estilos en diferentes partes del codigo, el estilo que va a predominar es la ultima regla que tenga el elemento.
+            </p>
+		</p>
+
+        <hr>
+        <h1>Orden en el que se resuelven los conflictos en CSS</h1>
+        <ol>
+            <li>!Important</li>
+            <li>Especificidad</li>
+            <li>Cascada</li>
+        </ol>
+	</body>
+</html>

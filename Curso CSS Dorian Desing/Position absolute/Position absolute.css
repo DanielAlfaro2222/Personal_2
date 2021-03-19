@@ -1,0 +1,45 @@
+.container {
+	width: 300px;
+	height: 290px;
+	border: 3px solid black;
+	margin: 1em;
+	position: relative;
+}
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5 {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+}
+
+.box-1 {
+	border: 3px solid red;
+	top: 0;
+	left: 0;
+}
+.box-2 {
+	border: 3px solid blue;
+	top: 0;
+	right: 0;
+}
+.box-3 {
+	border: 3px solid lime;
+	bottom: 0;
+	left: 0;
+}
+.box-4 {
+	border: 3px solid lightsalmon;
+	bottom: 0;
+	right: 0;
+}
+.box-5 {
+	border: 3px solid lightseagreen;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}

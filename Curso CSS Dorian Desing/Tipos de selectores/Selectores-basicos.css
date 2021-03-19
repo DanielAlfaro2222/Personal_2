@@ -1,0 +1,91 @@
+/* ============> Selectores basicos <================= */
+
+/* Selector por id */
+
+#Selector-id {
+	color: red;
+}
+
+/* Selector por clase */
+
+.Selector-clase {
+	color: blue;
+}
+
+/* -------Selector por combinadores---------- */
+
+/* Selector por hermano adyacente */
+
+li + div {
+	color: green;
+}
+
+/* Selector por hermano general */
+
+li ~ span {
+	color: blueviolet;
+}
+
+/* Selector descendente */
+
+div h4 {
+	color: brown;
+}
+
+/* Selector por hijo directo */
+
+div > h5 {
+	color: cyan;
+}
+
+/* Selector por atributo */
+
+[start] {
+	color: darkseagreen;
+}
+
+/* Selector por atributo y valor */
+
+[start='#'] {
+	color: lime;
+}
+
+/* Selector por atributo y valor por lo menos una vez*/
+
+[class~='Orange'] {
+	color: rgb(87, 32, 138);
+}
+
+/* Selector por atributo y exactamente ese valor o que el valor este de primeras separado con un guion*/
+
+[class|='brown'] {
+	color: rgb(23, 173, 173);
+}
+
+/* Selector por atributo y valor, cuando el valor esta de primeras */
+
+[class^='Blue'] {
+	color: orange;
+}
+
+/* Selector por atributo y valor, cuando el valor esta de ultimo */
+
+[class$='Yellow'] {
+	color: mediumpurple;
+}
+/* Selector por atributo y valor sin importar la posicion del valor */
+[class*='Red'] {
+	color: navy;
+}
+
+/* Selector por etiqueta  */
+
+strong {
+	color: lightsalmon;
+}
+
+/* Selector universal */
+
+* {
+	font-size: 30px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="../Resetear los estilos de los navegadores/normalize.css"
+		/>
+		<link rel="stylesheet" href="Position fixed.css" />
+		<title>Position fixed</title>
+	</head>
+	<body>
+		<h1>Position fixed</h1>
+		<p>
+			La position fixed es la que permite que un elemento se quede fijado
+			en el documento, sin importar si realiza o no scroll, el elemento se
+			quedara todo el tiempo en esa misma posicion.
+		</p>
+		<p>
+			Como el elemento se queda fijo en esa posicion, lo que hace la
+			propiedad fixed es quitarle el espacio en el flujo del documento
+			HTML y se posicionara respecto al viewport o body, ademas para
+			ubicarlo tenemos cuatro propiedades mas, una vez el elemento este
+			usando el position fixed.
+		</p>
+		<p>
+			Si el elemento no tiene un tamaño declarado, su tamaño sera igual al
+			tamaño de su contenido
+		</p>
+		<h2>Propiedades para ubicar o mover el elemento con position fixed</h2>
+		<ul>
+			<li>
+				<span>top</span> => Se usa para mover el elemento hacia arriba
+				en relacion al body o viewport, acepta valores positivos o
+				negativos.
+			</li>
+			<li>
+				<span>left</span> => Se usa para mover el elemento hacia la
+				izquierda en relacion al body o viewport, acepta valores
+				positivos o negativos.
+			</li>
+			<li>
+				<span>right</span> => Se usa para mover el elemento hacia la
+				derecha en relacion al body o viewport, acepta valores positivos
+				o negativos.
+			</li>
+			<li>
+				<span>bottom</span> => Se usa para mover el elemento hacia abajo
+				en relacion al body o viewport, acepta valores positivos o
+				negativos.
+			</li>
+		</ul>
+
+		<h2 class="subtitle">Ejemplo de position fixed</h2>
+		<div class="box"></div>
+	</body>
+</html>

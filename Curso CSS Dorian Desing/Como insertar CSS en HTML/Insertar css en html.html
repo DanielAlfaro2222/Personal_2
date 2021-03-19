@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Insertar CSS en HTML</title>
+	</head>
+	<body>
+		<h1>Maneras de insertar CSS en HTML5</h1>
+		<div>
+			<ol>
+				<li>
+					En la cabecera: a traves de la etiqueta &lt;style&gt;: En
+					caso de que tengamos una sola pagina, entonces ahi si
+					podremos usar este metodo, pero si tenemos varias paginas
+					que comparten estilos no es recomendable usar este metodo ya
+					que tendriamos que colocar en cada pagina el mismo codigo.
+				</li>
+				<li>
+					En linea dentro de la etiqueta con el atributo style: Se usa
+					cuando se necesita cambiar los estilos en tiempo real desde
+					javascript
+				</li>
+				<li>
+					Asociando una hoja de estilos externa a nuestro documento
+					HTML: Esta es la forma mas usada y mas recomendada.
+				</li>
+				<li>
+					A traves de @import dentro de la etiqueta &lt;style&gt;:
+					Esta es la peor forma de insertar CSS en HTML5 ya que si
+					llegase a fallar este import, el resto de la pagina no
+					cargara.
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>

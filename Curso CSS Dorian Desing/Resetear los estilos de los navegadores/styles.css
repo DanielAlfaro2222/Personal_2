@@ -1,0 +1,11 @@
+img {
+	width: 2000px;
+	height: 100px;
+}
+div {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	padding: 5px;
+	border: 5px solid black;
+}

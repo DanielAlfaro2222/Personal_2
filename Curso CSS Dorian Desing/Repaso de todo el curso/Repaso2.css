@@ -1,0 +1,12 @@
+body {
+	background-color: white;
+}
+.Ejemplo-herencia {
+	color: green;
+}
+.Ejemplo-herencia span {
+	color: initial;
+}
+.Ejemplo-herencia a {
+	color: inherit;
+}

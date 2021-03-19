@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			span {
+				background-color: lightblue;
+				margin-right: 3em;
+			}
+			.p {
+				background-color: lightgreen;
+			}
+		</style>
+		<title>Propiedad display</title>
+	</head>
+	<body>
+		<h1>Propiedad display</h1>
+		<p>
+			La propiedad display se usa para indicar el comportamiento de una
+			caja, con respecto a las demas cajas a su alrededor
+		</p>
+		<h2>Tipos de display mas utilizados</h2>
+		<ul>
+			<li>
+				inline => se usa para indicarle al elemento, que se va a
+				comportar como un elemento en linea.Ademas, los margenes y
+				padding en el eje vertical, no afectaran a las demas cajas,
+				unicamente los margenes y padding en el eje horizontal.
+			</li>
+			<li>
+				block => se usa para indicarle al elemento, que se va a
+				comportar como un elemento en bloque.
+			</li>
+			<li>
+				inline-block => Se usa para indicarle al elemento, que se va a
+				comportar como un elemento en linea, pero este si podra usar las
+				propiedades que tienen los elementos en bloque, en resumen es
+				una combinacion de ambos.
+			</li>
+			<li>
+				none => Se usa para ocultar elementos, pero de igual forma la
+				pagina los cargara, si un elemento tiene este display, tambien
+				perdera su espacio en el flujo del html.
+			</li>
+			<li> grid => mas adelante veremos para que se usa. </li>
+			<li> flex => mas adelante veremos para que se usa. </li>
+		</ul>
+		<h2>Ejemplo de elementos usando display inline y block</h2>
+		<span>Este es un elemento en linea</span>
+		<span>Este es un elemento en linea</span>
+		<p class="p"> Este es un elemento en bloque </p>
+	</body>
+</html>

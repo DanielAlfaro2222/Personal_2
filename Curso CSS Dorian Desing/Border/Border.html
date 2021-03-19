@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="normalize.css" />
+		<link rel="stylesheet" href="Border.css" />
+		<title>Border</title>
+	</head>
+	<body>
+		<h1>Border</h1>
+		<p>
+			El border es la linea que rodea a la caja, tambien esta propiedad es un shorthand, que junto a border, border-width, border-color y border-style, agrupan cada una todos los lados de la caja.
+			<h2>Ejemplo</h2>
+			Cada valor corresponde a un lado de la caja, el primer valor corresponde al lado superior o border-top, el segundo corresponde al lado derecho o border-right, el tercero corresponde al lado inferior o border-bottom y el cuarto corresponde al lado izquierdo o border-left.
+			<pre>
+				<code>
+					/* Border solo */
+
+					.box-4 {
+						border: 1em 2em 3em 4em;
+					}
+					
+					/* Border width */
+
+					.box-4 {
+						border-width: 1em 2em 3em 4em;
+					}
+					
+					/* Border style */
+
+					.box-4 {
+						border-style: dotted double groove ridge;
+					}
+					
+					/* Border color */
+
+					.box-4 {
+						border-color: white blue green yellow;
+					}
+				</code>
+			</pre>
+		</p>
+		<h3>Ejemplos</h3>
+		<div class="box-1"></div>
+		<div class="box-2"></div>
+		<div class="box-3"></div>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Metodologia BEM</title>
+	</head>
+	<body>
+		<h1>Metodologia BEM</h1>
+		<p>
+			Una metodologia en CSS son una serie de consejos para estructurar
+			nuestras clases de una manera sencilla, estable y reutilizable.
+		</p>
+		<p> BEM es una de las metodologias mas utilizadas en el mundo. </p>
+		<p> Su nombre viene de las siglas Block, Element, Modifier. </p>
+		<ul>
+			<li>
+				Block (Bloque) => Es cualquier elemento autonomo y aislado de
+				nuestro documento. Por ejemplo un menu, una galeria, un
+				formulario, etc....
+			</li>
+			<li>
+				Element (Eleemnto) => Es cada uno de los elementos del bloque.
+				Por ejemplo un link, una foto, un campo de texto, etc...
+			</li>
+			<li>
+				Modifier (Modificador) => Es cuando un bloque se repite en otro
+				lugar de nuestra web y necesita una modificacion. Por ejemplo un
+				color, un texto, una fuente, etc...
+			</li>
+		</ul>
+		<h2>Como se nombran los bloques</h2>
+        <p>
+            Los bloques se nombran con una sola palabra o con dos separadas por un guion, por si llegasen a existir conflictos de estilos.
+            <h3>Ejemplo</h3>
+            .menu / .main-menu <br>
+            .gallery / .main-gallery
+        </p>
+		<h2>Como se nombran los elementos</h2>
+        <p>
+            Para nombrar los elementos se usa el nombre del bloque al que pertenecen primero, luego dos rayas al piso y el nombre del elemento
+            <h3>Ejemplo</h3>
+            .menu__link / .main-menu__link <br>
+            .gallery__img / .main-gallery__img
+        </p>
+		<h2>Como se nombran los modificadores</h2>
+        <p>
+            Para nombrar los modificadores primero se usa el nombre del bloque al que pertenecen, luego dos guiones y el nombre del modificador.
+            <h3>Ejemplo</h3>
+            .menu--color / .main-menu--color <br>
+            .gallery--color / .main-gallery--color
+        </p>
+	</body>
+</html>
